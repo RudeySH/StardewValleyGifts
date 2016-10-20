@@ -1,0 +1,266 @@
+@import 'node_modules/normalize.css/normalize.css';
+
+.clickable {
+    cursor: pointer;
+    font-style: italic;
+}
+
+.sprite {
+    white-space: nowrap;
+    
+    > span::before {
+        content: "";
+        display: inline-block;
+        margin-right: 2px;
+        text-align: center;
+        transform: translateY(-2px);
+        vertical-align: middle;
+        width: 16px;
+        height: 16px;
+    }
+
+    &.object {
+        > span::before {
+            background-image: url(content/maps/springobjects.png);
+        }
+
+        .generate-objects();
+        .generate-objects(@i: 0) when (@i < 24 * 34) {
+            &.object-@{i} > span::before {
+                background-position: mod(@i, 24) * -16px floor(@i / 24) * -16px;
+            }
+            .generate-objects(@i + 1);
+        }
+    }
+
+    &.npc {
+        &.universal > span::before {
+            background-image: url(content/maps/towninterior.png);
+            background-position: 0 -288px;
+        }
+        &.robin > span::before {
+            background-image: url(content/characters/Robin.png);
+            background-position: 0 -4px;
+        }
+        &.demetrius > span::before {
+            background-image: url(content/characters/Demetrius.png);
+            background-position: 0 -1px;
+        }
+        &.maru > span::before {
+            background-image: url(content/characters/Maru.png);
+            background-position: 0 -6px;
+        }
+        &.sebastian > span::before {
+            background-image: url(content/characters/Sebastian.png);
+            background-position: 0 -4px;
+        }
+        &.linus > span::before {
+            background-image: url(content/characters/Linus.png);
+            background-position: 0 -7px;
+        }
+        &.pierre > span::before {
+            background-image: url(content/characters/Pierre.png);
+            background-position: 0 -3px;
+        }
+        &.caroline > span::before {
+            background-image: url(content/characters/Caroline.png);
+            background-position: 0 -7px;
+        }
+        &.abigail > span::before {
+            background-image: url(content/characters/Abigail.png);
+            background-position: 0 -5px;
+        }
+        &.alex > span::before {
+            background-image: url(content/characters/Alex.png);
+            background-position: 0 -3px;
+        }
+        &.george > span::before {
+            background-image: url(content/characters/George.png);
+            background-position: 0 -7px;
+        }
+        &.evelyn > span::before {
+            background-image: url(content/characters/Evelyn.png);
+            background-position: 0 -8px;
+        }
+        &.lewis > span::before {
+            background-image: url(content/characters/Lewis.png);
+            background-position: 0 -3px;
+        }
+        &.clint > span::before {
+            background-image: url(content/characters/Clint.png);
+            background-position: 0 -3px;
+        }
+        &.penny > span::before {
+            background-image: url(content/characters/Penny.png);
+            background-position: 0 -7px;
+        }
+        &.pam > span::before {
+            background-image: url(content/characters/Pam.png);
+            background-position: 0 -7px;
+        }
+        &.emily > span::before {
+            background-image: url(content/characters/Emily.png);
+            background-position: 0 -4px;
+        }
+        &.haley > span::before {
+            background-image: url(content/characters/Haley.png);
+            background-position: 0 -6px;
+        }
+        &.jas > span::before {
+            background-image: url(content/characters/Jas.png);
+            background-position: 0 -7px;
+        }
+        &.vincent > span::before {
+            background-image: url(content/characters/Vincent.png);
+            background-position: 0 -9px;
+        }
+        &.jodi > span::before {
+            background-image: url(content/characters/Jodi.png);
+            background-position: 0 -6px;
+        }
+        &.kent > span::before {
+            background-image: url(content/characters/Kent.png);
+            background-position: 0 -1px;
+        }
+        &.sam > span::before {
+            background-image: url(content/characters/Sam.png);
+            background-position: 0 -0px;
+        }
+        &.leah > span::before {
+            background-image: url(content/characters/Leah.png);
+            background-position: 0 -6px;
+        }
+        &.shane > span::before {
+            background-image: url(content/characters/Shane.png);
+            background-position: 0 -4px;
+        }
+        &.marnie > span::before {
+            background-image: url(content/characters/Marnie.png);
+            background-position: 0 -6px;
+        }
+        &.elliott > span::before {
+            background-image: url(content/characters/Elliott.png);
+            background-position: 0 -3px;
+        }
+        &.gus > span::before {
+            background-image: url(content/characters/Gus.png);
+            background-position: 0 -2px;
+        }
+        &.dwarf > span::before {
+            background-image: url(content/characters/Dwarf.png);
+            background-position: 0 -4px;
+        }
+        &.wizard > span::before {
+            background-image: url(content/characters/Wizard.png);
+            background-position: 0 -1px;
+        }
+        &.harvey > span::before {
+            background-image: url(content/characters/Harvey.png);
+            background-position: 0 -1px;
+        }
+        &.sandy > span::before {
+            background-image: url(content/characters/Sandy.png);
+            background-position: 0 -3px;
+        }
+        &.willy > span::before {
+            background-image: url(content/characters/Willy.png);
+            background-position: 0 -2px;
+        }
+        &.krobus > span::before {
+            background-image: url(content/characters/Krobus.png);
+            background-position: 0 -0px;
+        }
+    }
+}
+
+#npcGiftTastes {
+    border-collapse: collapse;
+
+    th, td {
+        text-align: left;
+        vertical-align: top;
+    }
+
+    th + th, td + td {
+        border-left: 1px solid #000;
+        width: 100% / 3;
+    }
+
+    tbody tr {
+        border-top: 1px solid #ddd;
+        
+        &.universal + tr {
+            border-top-color: black;
+        }
+
+        &:nth-child(odd) {
+            background-color: #eee;
+        }
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        float: left;
+        width: 180px;
+
+        > span {
+            height: 20px;
+            white-space: nowrap;
+        }
+
+        ul {
+            padding-left: 16px;
+
+            li {
+                -moz-transition: height .1s linear;
+                -ms-transition: height .1s linear;
+                -o-transition: height .1s linear;
+                -webkit-transition: height .1s linear;
+                transition: height .1s linear;
+                height: 0;
+                overflow: hidden;
+            }
+        }
+    }
+
+    .clickable {
+        &::before {
+            background-image: url(content/loosesprites/cursors.png);
+            background-position: -184px -345px;
+            margin: 4px 6px 4px 5px;
+            width: 7px;
+            height: 8px;
+        }
+
+        &.active {
+            &::before {
+                background-position: -177px -345px;
+            }
+
+            + ul li {
+                height: 18px;
+            }
+        }
+    }
+
+    .objects {
+        &:not(:first-of-type) label {
+            margin-top: 8px;
+        }
+
+        label {
+            display: block;
+            font-size: xx-small;
+        }
+    }
+
+    .universal .neutral {
+        float: left;
+        margin-right: 8px;
+    }
+}

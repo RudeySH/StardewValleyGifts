@@ -1,0 +1,2676 @@
+@import 'node_modules/normalize.css/normalize.css';
+.clickable {
+  cursor: pointer;
+  font-style: italic;
+}
+.sprite {
+  white-space: nowrap;
+}
+.sprite > span::before {
+  content: "";
+  display: inline-block;
+  margin-right: 2px;
+  text-align: center;
+  transform: translateY(-2px);
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+}
+.sprite.object > span::before {
+  background-image: url(content/maps/springobjects.png);
+}
+.sprite.object.object-0 > span::before {
+  background-position: 0px 0px;
+}
+.sprite.object.object-1 > span::before {
+  background-position: -16px 0px;
+}
+.sprite.object.object-2 > span::before {
+  background-position: -32px 0px;
+}
+.sprite.object.object-3 > span::before {
+  background-position: -48px 0px;
+}
+.sprite.object.object-4 > span::before {
+  background-position: -64px 0px;
+}
+.sprite.object.object-5 > span::before {
+  background-position: -80px 0px;
+}
+.sprite.object.object-6 > span::before {
+  background-position: -96px 0px;
+}
+.sprite.object.object-7 > span::before {
+  background-position: -112px 0px;
+}
+.sprite.object.object-8 > span::before {
+  background-position: -128px 0px;
+}
+.sprite.object.object-9 > span::before {
+  background-position: -144px 0px;
+}
+.sprite.object.object-10 > span::before {
+  background-position: -160px 0px;
+}
+.sprite.object.object-11 > span::before {
+  background-position: -176px 0px;
+}
+.sprite.object.object-12 > span::before {
+  background-position: -192px 0px;
+}
+.sprite.object.object-13 > span::before {
+  background-position: -208px 0px;
+}
+.sprite.object.object-14 > span::before {
+  background-position: -224px 0px;
+}
+.sprite.object.object-15 > span::before {
+  background-position: -240px 0px;
+}
+.sprite.object.object-16 > span::before {
+  background-position: -256px 0px;
+}
+.sprite.object.object-17 > span::before {
+  background-position: -272px 0px;
+}
+.sprite.object.object-18 > span::before {
+  background-position: -288px 0px;
+}
+.sprite.object.object-19 > span::before {
+  background-position: -304px 0px;
+}
+.sprite.object.object-20 > span::before {
+  background-position: -320px 0px;
+}
+.sprite.object.object-21 > span::before {
+  background-position: -336px 0px;
+}
+.sprite.object.object-22 > span::before {
+  background-position: -352px 0px;
+}
+.sprite.object.object-23 > span::before {
+  background-position: -368px 0px;
+}
+.sprite.object.object-24 > span::before {
+  background-position: 0px -16px;
+}
+.sprite.object.object-25 > span::before {
+  background-position: -16px -16px;
+}
+.sprite.object.object-26 > span::before {
+  background-position: -32px -16px;
+}
+.sprite.object.object-27 > span::before {
+  background-position: -48px -16px;
+}
+.sprite.object.object-28 > span::before {
+  background-position: -64px -16px;
+}
+.sprite.object.object-29 > span::before {
+  background-position: -80px -16px;
+}
+.sprite.object.object-30 > span::before {
+  background-position: -96px -16px;
+}
+.sprite.object.object-31 > span::before {
+  background-position: -112px -16px;
+}
+.sprite.object.object-32 > span::before {
+  background-position: -128px -16px;
+}
+.sprite.object.object-33 > span::before {
+  background-position: -144px -16px;
+}
+.sprite.object.object-34 > span::before {
+  background-position: -160px -16px;
+}
+.sprite.object.object-35 > span::before {
+  background-position: -176px -16px;
+}
+.sprite.object.object-36 > span::before {
+  background-position: -192px -16px;
+}
+.sprite.object.object-37 > span::before {
+  background-position: -208px -16px;
+}
+.sprite.object.object-38 > span::before {
+  background-position: -224px -16px;
+}
+.sprite.object.object-39 > span::before {
+  background-position: -240px -16px;
+}
+.sprite.object.object-40 > span::before {
+  background-position: -256px -16px;
+}
+.sprite.object.object-41 > span::before {
+  background-position: -272px -16px;
+}
+.sprite.object.object-42 > span::before {
+  background-position: -288px -16px;
+}
+.sprite.object.object-43 > span::before {
+  background-position: -304px -16px;
+}
+.sprite.object.object-44 > span::before {
+  background-position: -320px -16px;
+}
+.sprite.object.object-45 > span::before {
+  background-position: -336px -16px;
+}
+.sprite.object.object-46 > span::before {
+  background-position: -352px -16px;
+}
+.sprite.object.object-47 > span::before {
+  background-position: -368px -16px;
+}
+.sprite.object.object-48 > span::before {
+  background-position: 0px -32px;
+}
+.sprite.object.object-49 > span::before {
+  background-position: -16px -32px;
+}
+.sprite.object.object-50 > span::before {
+  background-position: -32px -32px;
+}
+.sprite.object.object-51 > span::before {
+  background-position: -48px -32px;
+}
+.sprite.object.object-52 > span::before {
+  background-position: -64px -32px;
+}
+.sprite.object.object-53 > span::before {
+  background-position: -80px -32px;
+}
+.sprite.object.object-54 > span::before {
+  background-position: -96px -32px;
+}
+.sprite.object.object-55 > span::before {
+  background-position: -112px -32px;
+}
+.sprite.object.object-56 > span::before {
+  background-position: -128px -32px;
+}
+.sprite.object.object-57 > span::before {
+  background-position: -144px -32px;
+}
+.sprite.object.object-58 > span::before {
+  background-position: -160px -32px;
+}
+.sprite.object.object-59 > span::before {
+  background-position: -176px -32px;
+}
+.sprite.object.object-60 > span::before {
+  background-position: -192px -32px;
+}
+.sprite.object.object-61 > span::before {
+  background-position: -208px -32px;
+}
+.sprite.object.object-62 > span::before {
+  background-position: -224px -32px;
+}
+.sprite.object.object-63 > span::before {
+  background-position: -240px -32px;
+}
+.sprite.object.object-64 > span::before {
+  background-position: -256px -32px;
+}
+.sprite.object.object-65 > span::before {
+  background-position: -272px -32px;
+}
+.sprite.object.object-66 > span::before {
+  background-position: -288px -32px;
+}
+.sprite.object.object-67 > span::before {
+  background-position: -304px -32px;
+}
+.sprite.object.object-68 > span::before {
+  background-position: -320px -32px;
+}
+.sprite.object.object-69 > span::before {
+  background-position: -336px -32px;
+}
+.sprite.object.object-70 > span::before {
+  background-position: -352px -32px;
+}
+.sprite.object.object-71 > span::before {
+  background-position: -368px -32px;
+}
+.sprite.object.object-72 > span::before {
+  background-position: 0px -48px;
+}
+.sprite.object.object-73 > span::before {
+  background-position: -16px -48px;
+}
+.sprite.object.object-74 > span::before {
+  background-position: -32px -48px;
+}
+.sprite.object.object-75 > span::before {
+  background-position: -48px -48px;
+}
+.sprite.object.object-76 > span::before {
+  background-position: -64px -48px;
+}
+.sprite.object.object-77 > span::before {
+  background-position: -80px -48px;
+}
+.sprite.object.object-78 > span::before {
+  background-position: -96px -48px;
+}
+.sprite.object.object-79 > span::before {
+  background-position: -112px -48px;
+}
+.sprite.object.object-80 > span::before {
+  background-position: -128px -48px;
+}
+.sprite.object.object-81 > span::before {
+  background-position: -144px -48px;
+}
+.sprite.object.object-82 > span::before {
+  background-position: -160px -48px;
+}
+.sprite.object.object-83 > span::before {
+  background-position: -176px -48px;
+}
+.sprite.object.object-84 > span::before {
+  background-position: -192px -48px;
+}
+.sprite.object.object-85 > span::before {
+  background-position: -208px -48px;
+}
+.sprite.object.object-86 > span::before {
+  background-position: -224px -48px;
+}
+.sprite.object.object-87 > span::before {
+  background-position: -240px -48px;
+}
+.sprite.object.object-88 > span::before {
+  background-position: -256px -48px;
+}
+.sprite.object.object-89 > span::before {
+  background-position: -272px -48px;
+}
+.sprite.object.object-90 > span::before {
+  background-position: -288px -48px;
+}
+.sprite.object.object-91 > span::before {
+  background-position: -304px -48px;
+}
+.sprite.object.object-92 > span::before {
+  background-position: -320px -48px;
+}
+.sprite.object.object-93 > span::before {
+  background-position: -336px -48px;
+}
+.sprite.object.object-94 > span::before {
+  background-position: -352px -48px;
+}
+.sprite.object.object-95 > span::before {
+  background-position: -368px -48px;
+}
+.sprite.object.object-96 > span::before {
+  background-position: 0px -64px;
+}
+.sprite.object.object-97 > span::before {
+  background-position: -16px -64px;
+}
+.sprite.object.object-98 > span::before {
+  background-position: -32px -64px;
+}
+.sprite.object.object-99 > span::before {
+  background-position: -48px -64px;
+}
+.sprite.object.object-100 > span::before {
+  background-position: -64px -64px;
+}
+.sprite.object.object-101 > span::before {
+  background-position: -80px -64px;
+}
+.sprite.object.object-102 > span::before {
+  background-position: -96px -64px;
+}
+.sprite.object.object-103 > span::before {
+  background-position: -112px -64px;
+}
+.sprite.object.object-104 > span::before {
+  background-position: -128px -64px;
+}
+.sprite.object.object-105 > span::before {
+  background-position: -144px -64px;
+}
+.sprite.object.object-106 > span::before {
+  background-position: -160px -64px;
+}
+.sprite.object.object-107 > span::before {
+  background-position: -176px -64px;
+}
+.sprite.object.object-108 > span::before {
+  background-position: -192px -64px;
+}
+.sprite.object.object-109 > span::before {
+  background-position: -208px -64px;
+}
+.sprite.object.object-110 > span::before {
+  background-position: -224px -64px;
+}
+.sprite.object.object-111 > span::before {
+  background-position: -240px -64px;
+}
+.sprite.object.object-112 > span::before {
+  background-position: -256px -64px;
+}
+.sprite.object.object-113 > span::before {
+  background-position: -272px -64px;
+}
+.sprite.object.object-114 > span::before {
+  background-position: -288px -64px;
+}
+.sprite.object.object-115 > span::before {
+  background-position: -304px -64px;
+}
+.sprite.object.object-116 > span::before {
+  background-position: -320px -64px;
+}
+.sprite.object.object-117 > span::before {
+  background-position: -336px -64px;
+}
+.sprite.object.object-118 > span::before {
+  background-position: -352px -64px;
+}
+.sprite.object.object-119 > span::before {
+  background-position: -368px -64px;
+}
+.sprite.object.object-120 > span::before {
+  background-position: 0px -80px;
+}
+.sprite.object.object-121 > span::before {
+  background-position: -16px -80px;
+}
+.sprite.object.object-122 > span::before {
+  background-position: -32px -80px;
+}
+.sprite.object.object-123 > span::before {
+  background-position: -48px -80px;
+}
+.sprite.object.object-124 > span::before {
+  background-position: -64px -80px;
+}
+.sprite.object.object-125 > span::before {
+  background-position: -80px -80px;
+}
+.sprite.object.object-126 > span::before {
+  background-position: -96px -80px;
+}
+.sprite.object.object-127 > span::before {
+  background-position: -112px -80px;
+}
+.sprite.object.object-128 > span::before {
+  background-position: -128px -80px;
+}
+.sprite.object.object-129 > span::before {
+  background-position: -144px -80px;
+}
+.sprite.object.object-130 > span::before {
+  background-position: -160px -80px;
+}
+.sprite.object.object-131 > span::before {
+  background-position: -176px -80px;
+}
+.sprite.object.object-132 > span::before {
+  background-position: -192px -80px;
+}
+.sprite.object.object-133 > span::before {
+  background-position: -208px -80px;
+}
+.sprite.object.object-134 > span::before {
+  background-position: -224px -80px;
+}
+.sprite.object.object-135 > span::before {
+  background-position: -240px -80px;
+}
+.sprite.object.object-136 > span::before {
+  background-position: -256px -80px;
+}
+.sprite.object.object-137 > span::before {
+  background-position: -272px -80px;
+}
+.sprite.object.object-138 > span::before {
+  background-position: -288px -80px;
+}
+.sprite.object.object-139 > span::before {
+  background-position: -304px -80px;
+}
+.sprite.object.object-140 > span::before {
+  background-position: -320px -80px;
+}
+.sprite.object.object-141 > span::before {
+  background-position: -336px -80px;
+}
+.sprite.object.object-142 > span::before {
+  background-position: -352px -80px;
+}
+.sprite.object.object-143 > span::before {
+  background-position: -368px -80px;
+}
+.sprite.object.object-144 > span::before {
+  background-position: 0px -96px;
+}
+.sprite.object.object-145 > span::before {
+  background-position: -16px -96px;
+}
+.sprite.object.object-146 > span::before {
+  background-position: -32px -96px;
+}
+.sprite.object.object-147 > span::before {
+  background-position: -48px -96px;
+}
+.sprite.object.object-148 > span::before {
+  background-position: -64px -96px;
+}
+.sprite.object.object-149 > span::before {
+  background-position: -80px -96px;
+}
+.sprite.object.object-150 > span::before {
+  background-position: -96px -96px;
+}
+.sprite.object.object-151 > span::before {
+  background-position: -112px -96px;
+}
+.sprite.object.object-152 > span::before {
+  background-position: -128px -96px;
+}
+.sprite.object.object-153 > span::before {
+  background-position: -144px -96px;
+}
+.sprite.object.object-154 > span::before {
+  background-position: -160px -96px;
+}
+.sprite.object.object-155 > span::before {
+  background-position: -176px -96px;
+}
+.sprite.object.object-156 > span::before {
+  background-position: -192px -96px;
+}
+.sprite.object.object-157 > span::before {
+  background-position: -208px -96px;
+}
+.sprite.object.object-158 > span::before {
+  background-position: -224px -96px;
+}
+.sprite.object.object-159 > span::before {
+  background-position: -240px -96px;
+}
+.sprite.object.object-160 > span::before {
+  background-position: -256px -96px;
+}
+.sprite.object.object-161 > span::before {
+  background-position: -272px -96px;
+}
+.sprite.object.object-162 > span::before {
+  background-position: -288px -96px;
+}
+.sprite.object.object-163 > span::before {
+  background-position: -304px -96px;
+}
+.sprite.object.object-164 > span::before {
+  background-position: -320px -96px;
+}
+.sprite.object.object-165 > span::before {
+  background-position: -336px -96px;
+}
+.sprite.object.object-166 > span::before {
+  background-position: -352px -96px;
+}
+.sprite.object.object-167 > span::before {
+  background-position: -368px -96px;
+}
+.sprite.object.object-168 > span::before {
+  background-position: 0px -112px;
+}
+.sprite.object.object-169 > span::before {
+  background-position: -16px -112px;
+}
+.sprite.object.object-170 > span::before {
+  background-position: -32px -112px;
+}
+.sprite.object.object-171 > span::before {
+  background-position: -48px -112px;
+}
+.sprite.object.object-172 > span::before {
+  background-position: -64px -112px;
+}
+.sprite.object.object-173 > span::before {
+  background-position: -80px -112px;
+}
+.sprite.object.object-174 > span::before {
+  background-position: -96px -112px;
+}
+.sprite.object.object-175 > span::before {
+  background-position: -112px -112px;
+}
+.sprite.object.object-176 > span::before {
+  background-position: -128px -112px;
+}
+.sprite.object.object-177 > span::before {
+  background-position: -144px -112px;
+}
+.sprite.object.object-178 > span::before {
+  background-position: -160px -112px;
+}
+.sprite.object.object-179 > span::before {
+  background-position: -176px -112px;
+}
+.sprite.object.object-180 > span::before {
+  background-position: -192px -112px;
+}
+.sprite.object.object-181 > span::before {
+  background-position: -208px -112px;
+}
+.sprite.object.object-182 > span::before {
+  background-position: -224px -112px;
+}
+.sprite.object.object-183 > span::before {
+  background-position: -240px -112px;
+}
+.sprite.object.object-184 > span::before {
+  background-position: -256px -112px;
+}
+.sprite.object.object-185 > span::before {
+  background-position: -272px -112px;
+}
+.sprite.object.object-186 > span::before {
+  background-position: -288px -112px;
+}
+.sprite.object.object-187 > span::before {
+  background-position: -304px -112px;
+}
+.sprite.object.object-188 > span::before {
+  background-position: -320px -112px;
+}
+.sprite.object.object-189 > span::before {
+  background-position: -336px -112px;
+}
+.sprite.object.object-190 > span::before {
+  background-position: -352px -112px;
+}
+.sprite.object.object-191 > span::before {
+  background-position: -368px -112px;
+}
+.sprite.object.object-192 > span::before {
+  background-position: 0px -128px;
+}
+.sprite.object.object-193 > span::before {
+  background-position: -16px -128px;
+}
+.sprite.object.object-194 > span::before {
+  background-position: -32px -128px;
+}
+.sprite.object.object-195 > span::before {
+  background-position: -48px -128px;
+}
+.sprite.object.object-196 > span::before {
+  background-position: -64px -128px;
+}
+.sprite.object.object-197 > span::before {
+  background-position: -80px -128px;
+}
+.sprite.object.object-198 > span::before {
+  background-position: -96px -128px;
+}
+.sprite.object.object-199 > span::before {
+  background-position: -112px -128px;
+}
+.sprite.object.object-200 > span::before {
+  background-position: -128px -128px;
+}
+.sprite.object.object-201 > span::before {
+  background-position: -144px -128px;
+}
+.sprite.object.object-202 > span::before {
+  background-position: -160px -128px;
+}
+.sprite.object.object-203 > span::before {
+  background-position: -176px -128px;
+}
+.sprite.object.object-204 > span::before {
+  background-position: -192px -128px;
+}
+.sprite.object.object-205 > span::before {
+  background-position: -208px -128px;
+}
+.sprite.object.object-206 > span::before {
+  background-position: -224px -128px;
+}
+.sprite.object.object-207 > span::before {
+  background-position: -240px -128px;
+}
+.sprite.object.object-208 > span::before {
+  background-position: -256px -128px;
+}
+.sprite.object.object-209 > span::before {
+  background-position: -272px -128px;
+}
+.sprite.object.object-210 > span::before {
+  background-position: -288px -128px;
+}
+.sprite.object.object-211 > span::before {
+  background-position: -304px -128px;
+}
+.sprite.object.object-212 > span::before {
+  background-position: -320px -128px;
+}
+.sprite.object.object-213 > span::before {
+  background-position: -336px -128px;
+}
+.sprite.object.object-214 > span::before {
+  background-position: -352px -128px;
+}
+.sprite.object.object-215 > span::before {
+  background-position: -368px -128px;
+}
+.sprite.object.object-216 > span::before {
+  background-position: 0px -144px;
+}
+.sprite.object.object-217 > span::before {
+  background-position: -16px -144px;
+}
+.sprite.object.object-218 > span::before {
+  background-position: -32px -144px;
+}
+.sprite.object.object-219 > span::before {
+  background-position: -48px -144px;
+}
+.sprite.object.object-220 > span::before {
+  background-position: -64px -144px;
+}
+.sprite.object.object-221 > span::before {
+  background-position: -80px -144px;
+}
+.sprite.object.object-222 > span::before {
+  background-position: -96px -144px;
+}
+.sprite.object.object-223 > span::before {
+  background-position: -112px -144px;
+}
+.sprite.object.object-224 > span::before {
+  background-position: -128px -144px;
+}
+.sprite.object.object-225 > span::before {
+  background-position: -144px -144px;
+}
+.sprite.object.object-226 > span::before {
+  background-position: -160px -144px;
+}
+.sprite.object.object-227 > span::before {
+  background-position: -176px -144px;
+}
+.sprite.object.object-228 > span::before {
+  background-position: -192px -144px;
+}
+.sprite.object.object-229 > span::before {
+  background-position: -208px -144px;
+}
+.sprite.object.object-230 > span::before {
+  background-position: -224px -144px;
+}
+.sprite.object.object-231 > span::before {
+  background-position: -240px -144px;
+}
+.sprite.object.object-232 > span::before {
+  background-position: -256px -144px;
+}
+.sprite.object.object-233 > span::before {
+  background-position: -272px -144px;
+}
+.sprite.object.object-234 > span::before {
+  background-position: -288px -144px;
+}
+.sprite.object.object-235 > span::before {
+  background-position: -304px -144px;
+}
+.sprite.object.object-236 > span::before {
+  background-position: -320px -144px;
+}
+.sprite.object.object-237 > span::before {
+  background-position: -336px -144px;
+}
+.sprite.object.object-238 > span::before {
+  background-position: -352px -144px;
+}
+.sprite.object.object-239 > span::before {
+  background-position: -368px -144px;
+}
+.sprite.object.object-240 > span::before {
+  background-position: 0px -160px;
+}
+.sprite.object.object-241 > span::before {
+  background-position: -16px -160px;
+}
+.sprite.object.object-242 > span::before {
+  background-position: -32px -160px;
+}
+.sprite.object.object-243 > span::before {
+  background-position: -48px -160px;
+}
+.sprite.object.object-244 > span::before {
+  background-position: -64px -160px;
+}
+.sprite.object.object-245 > span::before {
+  background-position: -80px -160px;
+}
+.sprite.object.object-246 > span::before {
+  background-position: -96px -160px;
+}
+.sprite.object.object-247 > span::before {
+  background-position: -112px -160px;
+}
+.sprite.object.object-248 > span::before {
+  background-position: -128px -160px;
+}
+.sprite.object.object-249 > span::before {
+  background-position: -144px -160px;
+}
+.sprite.object.object-250 > span::before {
+  background-position: -160px -160px;
+}
+.sprite.object.object-251 > span::before {
+  background-position: -176px -160px;
+}
+.sprite.object.object-252 > span::before {
+  background-position: -192px -160px;
+}
+.sprite.object.object-253 > span::before {
+  background-position: -208px -160px;
+}
+.sprite.object.object-254 > span::before {
+  background-position: -224px -160px;
+}
+.sprite.object.object-255 > span::before {
+  background-position: -240px -160px;
+}
+.sprite.object.object-256 > span::before {
+  background-position: -256px -160px;
+}
+.sprite.object.object-257 > span::before {
+  background-position: -272px -160px;
+}
+.sprite.object.object-258 > span::before {
+  background-position: -288px -160px;
+}
+.sprite.object.object-259 > span::before {
+  background-position: -304px -160px;
+}
+.sprite.object.object-260 > span::before {
+  background-position: -320px -160px;
+}
+.sprite.object.object-261 > span::before {
+  background-position: -336px -160px;
+}
+.sprite.object.object-262 > span::before {
+  background-position: -352px -160px;
+}
+.sprite.object.object-263 > span::before {
+  background-position: -368px -160px;
+}
+.sprite.object.object-264 > span::before {
+  background-position: 0px -176px;
+}
+.sprite.object.object-265 > span::before {
+  background-position: -16px -176px;
+}
+.sprite.object.object-266 > span::before {
+  background-position: -32px -176px;
+}
+.sprite.object.object-267 > span::before {
+  background-position: -48px -176px;
+}
+.sprite.object.object-268 > span::before {
+  background-position: -64px -176px;
+}
+.sprite.object.object-269 > span::before {
+  background-position: -80px -176px;
+}
+.sprite.object.object-270 > span::before {
+  background-position: -96px -176px;
+}
+.sprite.object.object-271 > span::before {
+  background-position: -112px -176px;
+}
+.sprite.object.object-272 > span::before {
+  background-position: -128px -176px;
+}
+.sprite.object.object-273 > span::before {
+  background-position: -144px -176px;
+}
+.sprite.object.object-274 > span::before {
+  background-position: -160px -176px;
+}
+.sprite.object.object-275 > span::before {
+  background-position: -176px -176px;
+}
+.sprite.object.object-276 > span::before {
+  background-position: -192px -176px;
+}
+.sprite.object.object-277 > span::before {
+  background-position: -208px -176px;
+}
+.sprite.object.object-278 > span::before {
+  background-position: -224px -176px;
+}
+.sprite.object.object-279 > span::before {
+  background-position: -240px -176px;
+}
+.sprite.object.object-280 > span::before {
+  background-position: -256px -176px;
+}
+.sprite.object.object-281 > span::before {
+  background-position: -272px -176px;
+}
+.sprite.object.object-282 > span::before {
+  background-position: -288px -176px;
+}
+.sprite.object.object-283 > span::before {
+  background-position: -304px -176px;
+}
+.sprite.object.object-284 > span::before {
+  background-position: -320px -176px;
+}
+.sprite.object.object-285 > span::before {
+  background-position: -336px -176px;
+}
+.sprite.object.object-286 > span::before {
+  background-position: -352px -176px;
+}
+.sprite.object.object-287 > span::before {
+  background-position: -368px -176px;
+}
+.sprite.object.object-288 > span::before {
+  background-position: 0px -192px;
+}
+.sprite.object.object-289 > span::before {
+  background-position: -16px -192px;
+}
+.sprite.object.object-290 > span::before {
+  background-position: -32px -192px;
+}
+.sprite.object.object-291 > span::before {
+  background-position: -48px -192px;
+}
+.sprite.object.object-292 > span::before {
+  background-position: -64px -192px;
+}
+.sprite.object.object-293 > span::before {
+  background-position: -80px -192px;
+}
+.sprite.object.object-294 > span::before {
+  background-position: -96px -192px;
+}
+.sprite.object.object-295 > span::before {
+  background-position: -112px -192px;
+}
+.sprite.object.object-296 > span::before {
+  background-position: -128px -192px;
+}
+.sprite.object.object-297 > span::before {
+  background-position: -144px -192px;
+}
+.sprite.object.object-298 > span::before {
+  background-position: -160px -192px;
+}
+.sprite.object.object-299 > span::before {
+  background-position: -176px -192px;
+}
+.sprite.object.object-300 > span::before {
+  background-position: -192px -192px;
+}
+.sprite.object.object-301 > span::before {
+  background-position: -208px -192px;
+}
+.sprite.object.object-302 > span::before {
+  background-position: -224px -192px;
+}
+.sprite.object.object-303 > span::before {
+  background-position: -240px -192px;
+}
+.sprite.object.object-304 > span::before {
+  background-position: -256px -192px;
+}
+.sprite.object.object-305 > span::before {
+  background-position: -272px -192px;
+}
+.sprite.object.object-306 > span::before {
+  background-position: -288px -192px;
+}
+.sprite.object.object-307 > span::before {
+  background-position: -304px -192px;
+}
+.sprite.object.object-308 > span::before {
+  background-position: -320px -192px;
+}
+.sprite.object.object-309 > span::before {
+  background-position: -336px -192px;
+}
+.sprite.object.object-310 > span::before {
+  background-position: -352px -192px;
+}
+.sprite.object.object-311 > span::before {
+  background-position: -368px -192px;
+}
+.sprite.object.object-312 > span::before {
+  background-position: 0px -208px;
+}
+.sprite.object.object-313 > span::before {
+  background-position: -16px -208px;
+}
+.sprite.object.object-314 > span::before {
+  background-position: -32px -208px;
+}
+.sprite.object.object-315 > span::before {
+  background-position: -48px -208px;
+}
+.sprite.object.object-316 > span::before {
+  background-position: -64px -208px;
+}
+.sprite.object.object-317 > span::before {
+  background-position: -80px -208px;
+}
+.sprite.object.object-318 > span::before {
+  background-position: -96px -208px;
+}
+.sprite.object.object-319 > span::before {
+  background-position: -112px -208px;
+}
+.sprite.object.object-320 > span::before {
+  background-position: -128px -208px;
+}
+.sprite.object.object-321 > span::before {
+  background-position: -144px -208px;
+}
+.sprite.object.object-322 > span::before {
+  background-position: -160px -208px;
+}
+.sprite.object.object-323 > span::before {
+  background-position: -176px -208px;
+}
+.sprite.object.object-324 > span::before {
+  background-position: -192px -208px;
+}
+.sprite.object.object-325 > span::before {
+  background-position: -208px -208px;
+}
+.sprite.object.object-326 > span::before {
+  background-position: -224px -208px;
+}
+.sprite.object.object-327 > span::before {
+  background-position: -240px -208px;
+}
+.sprite.object.object-328 > span::before {
+  background-position: -256px -208px;
+}
+.sprite.object.object-329 > span::before {
+  background-position: -272px -208px;
+}
+.sprite.object.object-330 > span::before {
+  background-position: -288px -208px;
+}
+.sprite.object.object-331 > span::before {
+  background-position: -304px -208px;
+}
+.sprite.object.object-332 > span::before {
+  background-position: -320px -208px;
+}
+.sprite.object.object-333 > span::before {
+  background-position: -336px -208px;
+}
+.sprite.object.object-334 > span::before {
+  background-position: -352px -208px;
+}
+.sprite.object.object-335 > span::before {
+  background-position: -368px -208px;
+}
+.sprite.object.object-336 > span::before {
+  background-position: 0px -224px;
+}
+.sprite.object.object-337 > span::before {
+  background-position: -16px -224px;
+}
+.sprite.object.object-338 > span::before {
+  background-position: -32px -224px;
+}
+.sprite.object.object-339 > span::before {
+  background-position: -48px -224px;
+}
+.sprite.object.object-340 > span::before {
+  background-position: -64px -224px;
+}
+.sprite.object.object-341 > span::before {
+  background-position: -80px -224px;
+}
+.sprite.object.object-342 > span::before {
+  background-position: -96px -224px;
+}
+.sprite.object.object-343 > span::before {
+  background-position: -112px -224px;
+}
+.sprite.object.object-344 > span::before {
+  background-position: -128px -224px;
+}
+.sprite.object.object-345 > span::before {
+  background-position: -144px -224px;
+}
+.sprite.object.object-346 > span::before {
+  background-position: -160px -224px;
+}
+.sprite.object.object-347 > span::before {
+  background-position: -176px -224px;
+}
+.sprite.object.object-348 > span::before {
+  background-position: -192px -224px;
+}
+.sprite.object.object-349 > span::before {
+  background-position: -208px -224px;
+}
+.sprite.object.object-350 > span::before {
+  background-position: -224px -224px;
+}
+.sprite.object.object-351 > span::before {
+  background-position: -240px -224px;
+}
+.sprite.object.object-352 > span::before {
+  background-position: -256px -224px;
+}
+.sprite.object.object-353 > span::before {
+  background-position: -272px -224px;
+}
+.sprite.object.object-354 > span::before {
+  background-position: -288px -224px;
+}
+.sprite.object.object-355 > span::before {
+  background-position: -304px -224px;
+}
+.sprite.object.object-356 > span::before {
+  background-position: -320px -224px;
+}
+.sprite.object.object-357 > span::before {
+  background-position: -336px -224px;
+}
+.sprite.object.object-358 > span::before {
+  background-position: -352px -224px;
+}
+.sprite.object.object-359 > span::before {
+  background-position: -368px -224px;
+}
+.sprite.object.object-360 > span::before {
+  background-position: 0px -240px;
+}
+.sprite.object.object-361 > span::before {
+  background-position: -16px -240px;
+}
+.sprite.object.object-362 > span::before {
+  background-position: -32px -240px;
+}
+.sprite.object.object-363 > span::before {
+  background-position: -48px -240px;
+}
+.sprite.object.object-364 > span::before {
+  background-position: -64px -240px;
+}
+.sprite.object.object-365 > span::before {
+  background-position: -80px -240px;
+}
+.sprite.object.object-366 > span::before {
+  background-position: -96px -240px;
+}
+.sprite.object.object-367 > span::before {
+  background-position: -112px -240px;
+}
+.sprite.object.object-368 > span::before {
+  background-position: -128px -240px;
+}
+.sprite.object.object-369 > span::before {
+  background-position: -144px -240px;
+}
+.sprite.object.object-370 > span::before {
+  background-position: -160px -240px;
+}
+.sprite.object.object-371 > span::before {
+  background-position: -176px -240px;
+}
+.sprite.object.object-372 > span::before {
+  background-position: -192px -240px;
+}
+.sprite.object.object-373 > span::before {
+  background-position: -208px -240px;
+}
+.sprite.object.object-374 > span::before {
+  background-position: -224px -240px;
+}
+.sprite.object.object-375 > span::before {
+  background-position: -240px -240px;
+}
+.sprite.object.object-376 > span::before {
+  background-position: -256px -240px;
+}
+.sprite.object.object-377 > span::before {
+  background-position: -272px -240px;
+}
+.sprite.object.object-378 > span::before {
+  background-position: -288px -240px;
+}
+.sprite.object.object-379 > span::before {
+  background-position: -304px -240px;
+}
+.sprite.object.object-380 > span::before {
+  background-position: -320px -240px;
+}
+.sprite.object.object-381 > span::before {
+  background-position: -336px -240px;
+}
+.sprite.object.object-382 > span::before {
+  background-position: -352px -240px;
+}
+.sprite.object.object-383 > span::before {
+  background-position: -368px -240px;
+}
+.sprite.object.object-384 > span::before {
+  background-position: 0px -256px;
+}
+.sprite.object.object-385 > span::before {
+  background-position: -16px -256px;
+}
+.sprite.object.object-386 > span::before {
+  background-position: -32px -256px;
+}
+.sprite.object.object-387 > span::before {
+  background-position: -48px -256px;
+}
+.sprite.object.object-388 > span::before {
+  background-position: -64px -256px;
+}
+.sprite.object.object-389 > span::before {
+  background-position: -80px -256px;
+}
+.sprite.object.object-390 > span::before {
+  background-position: -96px -256px;
+}
+.sprite.object.object-391 > span::before {
+  background-position: -112px -256px;
+}
+.sprite.object.object-392 > span::before {
+  background-position: -128px -256px;
+}
+.sprite.object.object-393 > span::before {
+  background-position: -144px -256px;
+}
+.sprite.object.object-394 > span::before {
+  background-position: -160px -256px;
+}
+.sprite.object.object-395 > span::before {
+  background-position: -176px -256px;
+}
+.sprite.object.object-396 > span::before {
+  background-position: -192px -256px;
+}
+.sprite.object.object-397 > span::before {
+  background-position: -208px -256px;
+}
+.sprite.object.object-398 > span::before {
+  background-position: -224px -256px;
+}
+.sprite.object.object-399 > span::before {
+  background-position: -240px -256px;
+}
+.sprite.object.object-400 > span::before {
+  background-position: -256px -256px;
+}
+.sprite.object.object-401 > span::before {
+  background-position: -272px -256px;
+}
+.sprite.object.object-402 > span::before {
+  background-position: -288px -256px;
+}
+.sprite.object.object-403 > span::before {
+  background-position: -304px -256px;
+}
+.sprite.object.object-404 > span::before {
+  background-position: -320px -256px;
+}
+.sprite.object.object-405 > span::before {
+  background-position: -336px -256px;
+}
+.sprite.object.object-406 > span::before {
+  background-position: -352px -256px;
+}
+.sprite.object.object-407 > span::before {
+  background-position: -368px -256px;
+}
+.sprite.object.object-408 > span::before {
+  background-position: 0px -272px;
+}
+.sprite.object.object-409 > span::before {
+  background-position: -16px -272px;
+}
+.sprite.object.object-410 > span::before {
+  background-position: -32px -272px;
+}
+.sprite.object.object-411 > span::before {
+  background-position: -48px -272px;
+}
+.sprite.object.object-412 > span::before {
+  background-position: -64px -272px;
+}
+.sprite.object.object-413 > span::before {
+  background-position: -80px -272px;
+}
+.sprite.object.object-414 > span::before {
+  background-position: -96px -272px;
+}
+.sprite.object.object-415 > span::before {
+  background-position: -112px -272px;
+}
+.sprite.object.object-416 > span::before {
+  background-position: -128px -272px;
+}
+.sprite.object.object-417 > span::before {
+  background-position: -144px -272px;
+}
+.sprite.object.object-418 > span::before {
+  background-position: -160px -272px;
+}
+.sprite.object.object-419 > span::before {
+  background-position: -176px -272px;
+}
+.sprite.object.object-420 > span::before {
+  background-position: -192px -272px;
+}
+.sprite.object.object-421 > span::before {
+  background-position: -208px -272px;
+}
+.sprite.object.object-422 > span::before {
+  background-position: -224px -272px;
+}
+.sprite.object.object-423 > span::before {
+  background-position: -240px -272px;
+}
+.sprite.object.object-424 > span::before {
+  background-position: -256px -272px;
+}
+.sprite.object.object-425 > span::before {
+  background-position: -272px -272px;
+}
+.sprite.object.object-426 > span::before {
+  background-position: -288px -272px;
+}
+.sprite.object.object-427 > span::before {
+  background-position: -304px -272px;
+}
+.sprite.object.object-428 > span::before {
+  background-position: -320px -272px;
+}
+.sprite.object.object-429 > span::before {
+  background-position: -336px -272px;
+}
+.sprite.object.object-430 > span::before {
+  background-position: -352px -272px;
+}
+.sprite.object.object-431 > span::before {
+  background-position: -368px -272px;
+}
+.sprite.object.object-432 > span::before {
+  background-position: 0px -288px;
+}
+.sprite.object.object-433 > span::before {
+  background-position: -16px -288px;
+}
+.sprite.object.object-434 > span::before {
+  background-position: -32px -288px;
+}
+.sprite.object.object-435 > span::before {
+  background-position: -48px -288px;
+}
+.sprite.object.object-436 > span::before {
+  background-position: -64px -288px;
+}
+.sprite.object.object-437 > span::before {
+  background-position: -80px -288px;
+}
+.sprite.object.object-438 > span::before {
+  background-position: -96px -288px;
+}
+.sprite.object.object-439 > span::before {
+  background-position: -112px -288px;
+}
+.sprite.object.object-440 > span::before {
+  background-position: -128px -288px;
+}
+.sprite.object.object-441 > span::before {
+  background-position: -144px -288px;
+}
+.sprite.object.object-442 > span::before {
+  background-position: -160px -288px;
+}
+.sprite.object.object-443 > span::before {
+  background-position: -176px -288px;
+}
+.sprite.object.object-444 > span::before {
+  background-position: -192px -288px;
+}
+.sprite.object.object-445 > span::before {
+  background-position: -208px -288px;
+}
+.sprite.object.object-446 > span::before {
+  background-position: -224px -288px;
+}
+.sprite.object.object-447 > span::before {
+  background-position: -240px -288px;
+}
+.sprite.object.object-448 > span::before {
+  background-position: -256px -288px;
+}
+.sprite.object.object-449 > span::before {
+  background-position: -272px -288px;
+}
+.sprite.object.object-450 > span::before {
+  background-position: -288px -288px;
+}
+.sprite.object.object-451 > span::before {
+  background-position: -304px -288px;
+}
+.sprite.object.object-452 > span::before {
+  background-position: -320px -288px;
+}
+.sprite.object.object-453 > span::before {
+  background-position: -336px -288px;
+}
+.sprite.object.object-454 > span::before {
+  background-position: -352px -288px;
+}
+.sprite.object.object-455 > span::before {
+  background-position: -368px -288px;
+}
+.sprite.object.object-456 > span::before {
+  background-position: 0px -304px;
+}
+.sprite.object.object-457 > span::before {
+  background-position: -16px -304px;
+}
+.sprite.object.object-458 > span::before {
+  background-position: -32px -304px;
+}
+.sprite.object.object-459 > span::before {
+  background-position: -48px -304px;
+}
+.sprite.object.object-460 > span::before {
+  background-position: -64px -304px;
+}
+.sprite.object.object-461 > span::before {
+  background-position: -80px -304px;
+}
+.sprite.object.object-462 > span::before {
+  background-position: -96px -304px;
+}
+.sprite.object.object-463 > span::before {
+  background-position: -112px -304px;
+}
+.sprite.object.object-464 > span::before {
+  background-position: -128px -304px;
+}
+.sprite.object.object-465 > span::before {
+  background-position: -144px -304px;
+}
+.sprite.object.object-466 > span::before {
+  background-position: -160px -304px;
+}
+.sprite.object.object-467 > span::before {
+  background-position: -176px -304px;
+}
+.sprite.object.object-468 > span::before {
+  background-position: -192px -304px;
+}
+.sprite.object.object-469 > span::before {
+  background-position: -208px -304px;
+}
+.sprite.object.object-470 > span::before {
+  background-position: -224px -304px;
+}
+.sprite.object.object-471 > span::before {
+  background-position: -240px -304px;
+}
+.sprite.object.object-472 > span::before {
+  background-position: -256px -304px;
+}
+.sprite.object.object-473 > span::before {
+  background-position: -272px -304px;
+}
+.sprite.object.object-474 > span::before {
+  background-position: -288px -304px;
+}
+.sprite.object.object-475 > span::before {
+  background-position: -304px -304px;
+}
+.sprite.object.object-476 > span::before {
+  background-position: -320px -304px;
+}
+.sprite.object.object-477 > span::before {
+  background-position: -336px -304px;
+}
+.sprite.object.object-478 > span::before {
+  background-position: -352px -304px;
+}
+.sprite.object.object-479 > span::before {
+  background-position: -368px -304px;
+}
+.sprite.object.object-480 > span::before {
+  background-position: 0px -320px;
+}
+.sprite.object.object-481 > span::before {
+  background-position: -16px -320px;
+}
+.sprite.object.object-482 > span::before {
+  background-position: -32px -320px;
+}
+.sprite.object.object-483 > span::before {
+  background-position: -48px -320px;
+}
+.sprite.object.object-484 > span::before {
+  background-position: -64px -320px;
+}
+.sprite.object.object-485 > span::before {
+  background-position: -80px -320px;
+}
+.sprite.object.object-486 > span::before {
+  background-position: -96px -320px;
+}
+.sprite.object.object-487 > span::before {
+  background-position: -112px -320px;
+}
+.sprite.object.object-488 > span::before {
+  background-position: -128px -320px;
+}
+.sprite.object.object-489 > span::before {
+  background-position: -144px -320px;
+}
+.sprite.object.object-490 > span::before {
+  background-position: -160px -320px;
+}
+.sprite.object.object-491 > span::before {
+  background-position: -176px -320px;
+}
+.sprite.object.object-492 > span::before {
+  background-position: -192px -320px;
+}
+.sprite.object.object-493 > span::before {
+  background-position: -208px -320px;
+}
+.sprite.object.object-494 > span::before {
+  background-position: -224px -320px;
+}
+.sprite.object.object-495 > span::before {
+  background-position: -240px -320px;
+}
+.sprite.object.object-496 > span::before {
+  background-position: -256px -320px;
+}
+.sprite.object.object-497 > span::before {
+  background-position: -272px -320px;
+}
+.sprite.object.object-498 > span::before {
+  background-position: -288px -320px;
+}
+.sprite.object.object-499 > span::before {
+  background-position: -304px -320px;
+}
+.sprite.object.object-500 > span::before {
+  background-position: -320px -320px;
+}
+.sprite.object.object-501 > span::before {
+  background-position: -336px -320px;
+}
+.sprite.object.object-502 > span::before {
+  background-position: -352px -320px;
+}
+.sprite.object.object-503 > span::before {
+  background-position: -368px -320px;
+}
+.sprite.object.object-504 > span::before {
+  background-position: 0px -336px;
+}
+.sprite.object.object-505 > span::before {
+  background-position: -16px -336px;
+}
+.sprite.object.object-506 > span::before {
+  background-position: -32px -336px;
+}
+.sprite.object.object-507 > span::before {
+  background-position: -48px -336px;
+}
+.sprite.object.object-508 > span::before {
+  background-position: -64px -336px;
+}
+.sprite.object.object-509 > span::before {
+  background-position: -80px -336px;
+}
+.sprite.object.object-510 > span::before {
+  background-position: -96px -336px;
+}
+.sprite.object.object-511 > span::before {
+  background-position: -112px -336px;
+}
+.sprite.object.object-512 > span::before {
+  background-position: -128px -336px;
+}
+.sprite.object.object-513 > span::before {
+  background-position: -144px -336px;
+}
+.sprite.object.object-514 > span::before {
+  background-position: -160px -336px;
+}
+.sprite.object.object-515 > span::before {
+  background-position: -176px -336px;
+}
+.sprite.object.object-516 > span::before {
+  background-position: -192px -336px;
+}
+.sprite.object.object-517 > span::before {
+  background-position: -208px -336px;
+}
+.sprite.object.object-518 > span::before {
+  background-position: -224px -336px;
+}
+.sprite.object.object-519 > span::before {
+  background-position: -240px -336px;
+}
+.sprite.object.object-520 > span::before {
+  background-position: -256px -336px;
+}
+.sprite.object.object-521 > span::before {
+  background-position: -272px -336px;
+}
+.sprite.object.object-522 > span::before {
+  background-position: -288px -336px;
+}
+.sprite.object.object-523 > span::before {
+  background-position: -304px -336px;
+}
+.sprite.object.object-524 > span::before {
+  background-position: -320px -336px;
+}
+.sprite.object.object-525 > span::before {
+  background-position: -336px -336px;
+}
+.sprite.object.object-526 > span::before {
+  background-position: -352px -336px;
+}
+.sprite.object.object-527 > span::before {
+  background-position: -368px -336px;
+}
+.sprite.object.object-528 > span::before {
+  background-position: 0px -352px;
+}
+.sprite.object.object-529 > span::before {
+  background-position: -16px -352px;
+}
+.sprite.object.object-530 > span::before {
+  background-position: -32px -352px;
+}
+.sprite.object.object-531 > span::before {
+  background-position: -48px -352px;
+}
+.sprite.object.object-532 > span::before {
+  background-position: -64px -352px;
+}
+.sprite.object.object-533 > span::before {
+  background-position: -80px -352px;
+}
+.sprite.object.object-534 > span::before {
+  background-position: -96px -352px;
+}
+.sprite.object.object-535 > span::before {
+  background-position: -112px -352px;
+}
+.sprite.object.object-536 > span::before {
+  background-position: -128px -352px;
+}
+.sprite.object.object-537 > span::before {
+  background-position: -144px -352px;
+}
+.sprite.object.object-538 > span::before {
+  background-position: -160px -352px;
+}
+.sprite.object.object-539 > span::before {
+  background-position: -176px -352px;
+}
+.sprite.object.object-540 > span::before {
+  background-position: -192px -352px;
+}
+.sprite.object.object-541 > span::before {
+  background-position: -208px -352px;
+}
+.sprite.object.object-542 > span::before {
+  background-position: -224px -352px;
+}
+.sprite.object.object-543 > span::before {
+  background-position: -240px -352px;
+}
+.sprite.object.object-544 > span::before {
+  background-position: -256px -352px;
+}
+.sprite.object.object-545 > span::before {
+  background-position: -272px -352px;
+}
+.sprite.object.object-546 > span::before {
+  background-position: -288px -352px;
+}
+.sprite.object.object-547 > span::before {
+  background-position: -304px -352px;
+}
+.sprite.object.object-548 > span::before {
+  background-position: -320px -352px;
+}
+.sprite.object.object-549 > span::before {
+  background-position: -336px -352px;
+}
+.sprite.object.object-550 > span::before {
+  background-position: -352px -352px;
+}
+.sprite.object.object-551 > span::before {
+  background-position: -368px -352px;
+}
+.sprite.object.object-552 > span::before {
+  background-position: 0px -368px;
+}
+.sprite.object.object-553 > span::before {
+  background-position: -16px -368px;
+}
+.sprite.object.object-554 > span::before {
+  background-position: -32px -368px;
+}
+.sprite.object.object-555 > span::before {
+  background-position: -48px -368px;
+}
+.sprite.object.object-556 > span::before {
+  background-position: -64px -368px;
+}
+.sprite.object.object-557 > span::before {
+  background-position: -80px -368px;
+}
+.sprite.object.object-558 > span::before {
+  background-position: -96px -368px;
+}
+.sprite.object.object-559 > span::before {
+  background-position: -112px -368px;
+}
+.sprite.object.object-560 > span::before {
+  background-position: -128px -368px;
+}
+.sprite.object.object-561 > span::before {
+  background-position: -144px -368px;
+}
+.sprite.object.object-562 > span::before {
+  background-position: -160px -368px;
+}
+.sprite.object.object-563 > span::before {
+  background-position: -176px -368px;
+}
+.sprite.object.object-564 > span::before {
+  background-position: -192px -368px;
+}
+.sprite.object.object-565 > span::before {
+  background-position: -208px -368px;
+}
+.sprite.object.object-566 > span::before {
+  background-position: -224px -368px;
+}
+.sprite.object.object-567 > span::before {
+  background-position: -240px -368px;
+}
+.sprite.object.object-568 > span::before {
+  background-position: -256px -368px;
+}
+.sprite.object.object-569 > span::before {
+  background-position: -272px -368px;
+}
+.sprite.object.object-570 > span::before {
+  background-position: -288px -368px;
+}
+.sprite.object.object-571 > span::before {
+  background-position: -304px -368px;
+}
+.sprite.object.object-572 > span::before {
+  background-position: -320px -368px;
+}
+.sprite.object.object-573 > span::before {
+  background-position: -336px -368px;
+}
+.sprite.object.object-574 > span::before {
+  background-position: -352px -368px;
+}
+.sprite.object.object-575 > span::before {
+  background-position: -368px -368px;
+}
+.sprite.object.object-576 > span::before {
+  background-position: 0px -384px;
+}
+.sprite.object.object-577 > span::before {
+  background-position: -16px -384px;
+}
+.sprite.object.object-578 > span::before {
+  background-position: -32px -384px;
+}
+.sprite.object.object-579 > span::before {
+  background-position: -48px -384px;
+}
+.sprite.object.object-580 > span::before {
+  background-position: -64px -384px;
+}
+.sprite.object.object-581 > span::before {
+  background-position: -80px -384px;
+}
+.sprite.object.object-582 > span::before {
+  background-position: -96px -384px;
+}
+.sprite.object.object-583 > span::before {
+  background-position: -112px -384px;
+}
+.sprite.object.object-584 > span::before {
+  background-position: -128px -384px;
+}
+.sprite.object.object-585 > span::before {
+  background-position: -144px -384px;
+}
+.sprite.object.object-586 > span::before {
+  background-position: -160px -384px;
+}
+.sprite.object.object-587 > span::before {
+  background-position: -176px -384px;
+}
+.sprite.object.object-588 > span::before {
+  background-position: -192px -384px;
+}
+.sprite.object.object-589 > span::before {
+  background-position: -208px -384px;
+}
+.sprite.object.object-590 > span::before {
+  background-position: -224px -384px;
+}
+.sprite.object.object-591 > span::before {
+  background-position: -240px -384px;
+}
+.sprite.object.object-592 > span::before {
+  background-position: -256px -384px;
+}
+.sprite.object.object-593 > span::before {
+  background-position: -272px -384px;
+}
+.sprite.object.object-594 > span::before {
+  background-position: -288px -384px;
+}
+.sprite.object.object-595 > span::before {
+  background-position: -304px -384px;
+}
+.sprite.object.object-596 > span::before {
+  background-position: -320px -384px;
+}
+.sprite.object.object-597 > span::before {
+  background-position: -336px -384px;
+}
+.sprite.object.object-598 > span::before {
+  background-position: -352px -384px;
+}
+.sprite.object.object-599 > span::before {
+  background-position: -368px -384px;
+}
+.sprite.object.object-600 > span::before {
+  background-position: 0px -400px;
+}
+.sprite.object.object-601 > span::before {
+  background-position: -16px -400px;
+}
+.sprite.object.object-602 > span::before {
+  background-position: -32px -400px;
+}
+.sprite.object.object-603 > span::before {
+  background-position: -48px -400px;
+}
+.sprite.object.object-604 > span::before {
+  background-position: -64px -400px;
+}
+.sprite.object.object-605 > span::before {
+  background-position: -80px -400px;
+}
+.sprite.object.object-606 > span::before {
+  background-position: -96px -400px;
+}
+.sprite.object.object-607 > span::before {
+  background-position: -112px -400px;
+}
+.sprite.object.object-608 > span::before {
+  background-position: -128px -400px;
+}
+.sprite.object.object-609 > span::before {
+  background-position: -144px -400px;
+}
+.sprite.object.object-610 > span::before {
+  background-position: -160px -400px;
+}
+.sprite.object.object-611 > span::before {
+  background-position: -176px -400px;
+}
+.sprite.object.object-612 > span::before {
+  background-position: -192px -400px;
+}
+.sprite.object.object-613 > span::before {
+  background-position: -208px -400px;
+}
+.sprite.object.object-614 > span::before {
+  background-position: -224px -400px;
+}
+.sprite.object.object-615 > span::before {
+  background-position: -240px -400px;
+}
+.sprite.object.object-616 > span::before {
+  background-position: -256px -400px;
+}
+.sprite.object.object-617 > span::before {
+  background-position: -272px -400px;
+}
+.sprite.object.object-618 > span::before {
+  background-position: -288px -400px;
+}
+.sprite.object.object-619 > span::before {
+  background-position: -304px -400px;
+}
+.sprite.object.object-620 > span::before {
+  background-position: -320px -400px;
+}
+.sprite.object.object-621 > span::before {
+  background-position: -336px -400px;
+}
+.sprite.object.object-622 > span::before {
+  background-position: -352px -400px;
+}
+.sprite.object.object-623 > span::before {
+  background-position: -368px -400px;
+}
+.sprite.object.object-624 > span::before {
+  background-position: 0px -416px;
+}
+.sprite.object.object-625 > span::before {
+  background-position: -16px -416px;
+}
+.sprite.object.object-626 > span::before {
+  background-position: -32px -416px;
+}
+.sprite.object.object-627 > span::before {
+  background-position: -48px -416px;
+}
+.sprite.object.object-628 > span::before {
+  background-position: -64px -416px;
+}
+.sprite.object.object-629 > span::before {
+  background-position: -80px -416px;
+}
+.sprite.object.object-630 > span::before {
+  background-position: -96px -416px;
+}
+.sprite.object.object-631 > span::before {
+  background-position: -112px -416px;
+}
+.sprite.object.object-632 > span::before {
+  background-position: -128px -416px;
+}
+.sprite.object.object-633 > span::before {
+  background-position: -144px -416px;
+}
+.sprite.object.object-634 > span::before {
+  background-position: -160px -416px;
+}
+.sprite.object.object-635 > span::before {
+  background-position: -176px -416px;
+}
+.sprite.object.object-636 > span::before {
+  background-position: -192px -416px;
+}
+.sprite.object.object-637 > span::before {
+  background-position: -208px -416px;
+}
+.sprite.object.object-638 > span::before {
+  background-position: -224px -416px;
+}
+.sprite.object.object-639 > span::before {
+  background-position: -240px -416px;
+}
+.sprite.object.object-640 > span::before {
+  background-position: -256px -416px;
+}
+.sprite.object.object-641 > span::before {
+  background-position: -272px -416px;
+}
+.sprite.object.object-642 > span::before {
+  background-position: -288px -416px;
+}
+.sprite.object.object-643 > span::before {
+  background-position: -304px -416px;
+}
+.sprite.object.object-644 > span::before {
+  background-position: -320px -416px;
+}
+.sprite.object.object-645 > span::before {
+  background-position: -336px -416px;
+}
+.sprite.object.object-646 > span::before {
+  background-position: -352px -416px;
+}
+.sprite.object.object-647 > span::before {
+  background-position: -368px -416px;
+}
+.sprite.object.object-648 > span::before {
+  background-position: 0px -432px;
+}
+.sprite.object.object-649 > span::before {
+  background-position: -16px -432px;
+}
+.sprite.object.object-650 > span::before {
+  background-position: -32px -432px;
+}
+.sprite.object.object-651 > span::before {
+  background-position: -48px -432px;
+}
+.sprite.object.object-652 > span::before {
+  background-position: -64px -432px;
+}
+.sprite.object.object-653 > span::before {
+  background-position: -80px -432px;
+}
+.sprite.object.object-654 > span::before {
+  background-position: -96px -432px;
+}
+.sprite.object.object-655 > span::before {
+  background-position: -112px -432px;
+}
+.sprite.object.object-656 > span::before {
+  background-position: -128px -432px;
+}
+.sprite.object.object-657 > span::before {
+  background-position: -144px -432px;
+}
+.sprite.object.object-658 > span::before {
+  background-position: -160px -432px;
+}
+.sprite.object.object-659 > span::before {
+  background-position: -176px -432px;
+}
+.sprite.object.object-660 > span::before {
+  background-position: -192px -432px;
+}
+.sprite.object.object-661 > span::before {
+  background-position: -208px -432px;
+}
+.sprite.object.object-662 > span::before {
+  background-position: -224px -432px;
+}
+.sprite.object.object-663 > span::before {
+  background-position: -240px -432px;
+}
+.sprite.object.object-664 > span::before {
+  background-position: -256px -432px;
+}
+.sprite.object.object-665 > span::before {
+  background-position: -272px -432px;
+}
+.sprite.object.object-666 > span::before {
+  background-position: -288px -432px;
+}
+.sprite.object.object-667 > span::before {
+  background-position: -304px -432px;
+}
+.sprite.object.object-668 > span::before {
+  background-position: -320px -432px;
+}
+.sprite.object.object-669 > span::before {
+  background-position: -336px -432px;
+}
+.sprite.object.object-670 > span::before {
+  background-position: -352px -432px;
+}
+.sprite.object.object-671 > span::before {
+  background-position: -368px -432px;
+}
+.sprite.object.object-672 > span::before {
+  background-position: 0px -448px;
+}
+.sprite.object.object-673 > span::before {
+  background-position: -16px -448px;
+}
+.sprite.object.object-674 > span::before {
+  background-position: -32px -448px;
+}
+.sprite.object.object-675 > span::before {
+  background-position: -48px -448px;
+}
+.sprite.object.object-676 > span::before {
+  background-position: -64px -448px;
+}
+.sprite.object.object-677 > span::before {
+  background-position: -80px -448px;
+}
+.sprite.object.object-678 > span::before {
+  background-position: -96px -448px;
+}
+.sprite.object.object-679 > span::before {
+  background-position: -112px -448px;
+}
+.sprite.object.object-680 > span::before {
+  background-position: -128px -448px;
+}
+.sprite.object.object-681 > span::before {
+  background-position: -144px -448px;
+}
+.sprite.object.object-682 > span::before {
+  background-position: -160px -448px;
+}
+.sprite.object.object-683 > span::before {
+  background-position: -176px -448px;
+}
+.sprite.object.object-684 > span::before {
+  background-position: -192px -448px;
+}
+.sprite.object.object-685 > span::before {
+  background-position: -208px -448px;
+}
+.sprite.object.object-686 > span::before {
+  background-position: -224px -448px;
+}
+.sprite.object.object-687 > span::before {
+  background-position: -240px -448px;
+}
+.sprite.object.object-688 > span::before {
+  background-position: -256px -448px;
+}
+.sprite.object.object-689 > span::before {
+  background-position: -272px -448px;
+}
+.sprite.object.object-690 > span::before {
+  background-position: -288px -448px;
+}
+.sprite.object.object-691 > span::before {
+  background-position: -304px -448px;
+}
+.sprite.object.object-692 > span::before {
+  background-position: -320px -448px;
+}
+.sprite.object.object-693 > span::before {
+  background-position: -336px -448px;
+}
+.sprite.object.object-694 > span::before {
+  background-position: -352px -448px;
+}
+.sprite.object.object-695 > span::before {
+  background-position: -368px -448px;
+}
+.sprite.object.object-696 > span::before {
+  background-position: 0px -464px;
+}
+.sprite.object.object-697 > span::before {
+  background-position: -16px -464px;
+}
+.sprite.object.object-698 > span::before {
+  background-position: -32px -464px;
+}
+.sprite.object.object-699 > span::before {
+  background-position: -48px -464px;
+}
+.sprite.object.object-700 > span::before {
+  background-position: -64px -464px;
+}
+.sprite.object.object-701 > span::before {
+  background-position: -80px -464px;
+}
+.sprite.object.object-702 > span::before {
+  background-position: -96px -464px;
+}
+.sprite.object.object-703 > span::before {
+  background-position: -112px -464px;
+}
+.sprite.object.object-704 > span::before {
+  background-position: -128px -464px;
+}
+.sprite.object.object-705 > span::before {
+  background-position: -144px -464px;
+}
+.sprite.object.object-706 > span::before {
+  background-position: -160px -464px;
+}
+.sprite.object.object-707 > span::before {
+  background-position: -176px -464px;
+}
+.sprite.object.object-708 > span::before {
+  background-position: -192px -464px;
+}
+.sprite.object.object-709 > span::before {
+  background-position: -208px -464px;
+}
+.sprite.object.object-710 > span::before {
+  background-position: -224px -464px;
+}
+.sprite.object.object-711 > span::before {
+  background-position: -240px -464px;
+}
+.sprite.object.object-712 > span::before {
+  background-position: -256px -464px;
+}
+.sprite.object.object-713 > span::before {
+  background-position: -272px -464px;
+}
+.sprite.object.object-714 > span::before {
+  background-position: -288px -464px;
+}
+.sprite.object.object-715 > span::before {
+  background-position: -304px -464px;
+}
+.sprite.object.object-716 > span::before {
+  background-position: -320px -464px;
+}
+.sprite.object.object-717 > span::before {
+  background-position: -336px -464px;
+}
+.sprite.object.object-718 > span::before {
+  background-position: -352px -464px;
+}
+.sprite.object.object-719 > span::before {
+  background-position: -368px -464px;
+}
+.sprite.object.object-720 > span::before {
+  background-position: 0px -480px;
+}
+.sprite.object.object-721 > span::before {
+  background-position: -16px -480px;
+}
+.sprite.object.object-722 > span::before {
+  background-position: -32px -480px;
+}
+.sprite.object.object-723 > span::before {
+  background-position: -48px -480px;
+}
+.sprite.object.object-724 > span::before {
+  background-position: -64px -480px;
+}
+.sprite.object.object-725 > span::before {
+  background-position: -80px -480px;
+}
+.sprite.object.object-726 > span::before {
+  background-position: -96px -480px;
+}
+.sprite.object.object-727 > span::before {
+  background-position: -112px -480px;
+}
+.sprite.object.object-728 > span::before {
+  background-position: -128px -480px;
+}
+.sprite.object.object-729 > span::before {
+  background-position: -144px -480px;
+}
+.sprite.object.object-730 > span::before {
+  background-position: -160px -480px;
+}
+.sprite.object.object-731 > span::before {
+  background-position: -176px -480px;
+}
+.sprite.object.object-732 > span::before {
+  background-position: -192px -480px;
+}
+.sprite.object.object-733 > span::before {
+  background-position: -208px -480px;
+}
+.sprite.object.object-734 > span::before {
+  background-position: -224px -480px;
+}
+.sprite.object.object-735 > span::before {
+  background-position: -240px -480px;
+}
+.sprite.object.object-736 > span::before {
+  background-position: -256px -480px;
+}
+.sprite.object.object-737 > span::before {
+  background-position: -272px -480px;
+}
+.sprite.object.object-738 > span::before {
+  background-position: -288px -480px;
+}
+.sprite.object.object-739 > span::before {
+  background-position: -304px -480px;
+}
+.sprite.object.object-740 > span::before {
+  background-position: -320px -480px;
+}
+.sprite.object.object-741 > span::before {
+  background-position: -336px -480px;
+}
+.sprite.object.object-742 > span::before {
+  background-position: -352px -480px;
+}
+.sprite.object.object-743 > span::before {
+  background-position: -368px -480px;
+}
+.sprite.object.object-744 > span::before {
+  background-position: 0px -496px;
+}
+.sprite.object.object-745 > span::before {
+  background-position: -16px -496px;
+}
+.sprite.object.object-746 > span::before {
+  background-position: -32px -496px;
+}
+.sprite.object.object-747 > span::before {
+  background-position: -48px -496px;
+}
+.sprite.object.object-748 > span::before {
+  background-position: -64px -496px;
+}
+.sprite.object.object-749 > span::before {
+  background-position: -80px -496px;
+}
+.sprite.object.object-750 > span::before {
+  background-position: -96px -496px;
+}
+.sprite.object.object-751 > span::before {
+  background-position: -112px -496px;
+}
+.sprite.object.object-752 > span::before {
+  background-position: -128px -496px;
+}
+.sprite.object.object-753 > span::before {
+  background-position: -144px -496px;
+}
+.sprite.object.object-754 > span::before {
+  background-position: -160px -496px;
+}
+.sprite.object.object-755 > span::before {
+  background-position: -176px -496px;
+}
+.sprite.object.object-756 > span::before {
+  background-position: -192px -496px;
+}
+.sprite.object.object-757 > span::before {
+  background-position: -208px -496px;
+}
+.sprite.object.object-758 > span::before {
+  background-position: -224px -496px;
+}
+.sprite.object.object-759 > span::before {
+  background-position: -240px -496px;
+}
+.sprite.object.object-760 > span::before {
+  background-position: -256px -496px;
+}
+.sprite.object.object-761 > span::before {
+  background-position: -272px -496px;
+}
+.sprite.object.object-762 > span::before {
+  background-position: -288px -496px;
+}
+.sprite.object.object-763 > span::before {
+  background-position: -304px -496px;
+}
+.sprite.object.object-764 > span::before {
+  background-position: -320px -496px;
+}
+.sprite.object.object-765 > span::before {
+  background-position: -336px -496px;
+}
+.sprite.object.object-766 > span::before {
+  background-position: -352px -496px;
+}
+.sprite.object.object-767 > span::before {
+  background-position: -368px -496px;
+}
+.sprite.object.object-768 > span::before {
+  background-position: 0px -512px;
+}
+.sprite.object.object-769 > span::before {
+  background-position: -16px -512px;
+}
+.sprite.object.object-770 > span::before {
+  background-position: -32px -512px;
+}
+.sprite.object.object-771 > span::before {
+  background-position: -48px -512px;
+}
+.sprite.object.object-772 > span::before {
+  background-position: -64px -512px;
+}
+.sprite.object.object-773 > span::before {
+  background-position: -80px -512px;
+}
+.sprite.object.object-774 > span::before {
+  background-position: -96px -512px;
+}
+.sprite.object.object-775 > span::before {
+  background-position: -112px -512px;
+}
+.sprite.object.object-776 > span::before {
+  background-position: -128px -512px;
+}
+.sprite.object.object-777 > span::before {
+  background-position: -144px -512px;
+}
+.sprite.object.object-778 > span::before {
+  background-position: -160px -512px;
+}
+.sprite.object.object-779 > span::before {
+  background-position: -176px -512px;
+}
+.sprite.object.object-780 > span::before {
+  background-position: -192px -512px;
+}
+.sprite.object.object-781 > span::before {
+  background-position: -208px -512px;
+}
+.sprite.object.object-782 > span::before {
+  background-position: -224px -512px;
+}
+.sprite.object.object-783 > span::before {
+  background-position: -240px -512px;
+}
+.sprite.object.object-784 > span::before {
+  background-position: -256px -512px;
+}
+.sprite.object.object-785 > span::before {
+  background-position: -272px -512px;
+}
+.sprite.object.object-786 > span::before {
+  background-position: -288px -512px;
+}
+.sprite.object.object-787 > span::before {
+  background-position: -304px -512px;
+}
+.sprite.object.object-788 > span::before {
+  background-position: -320px -512px;
+}
+.sprite.object.object-789 > span::before {
+  background-position: -336px -512px;
+}
+.sprite.object.object-790 > span::before {
+  background-position: -352px -512px;
+}
+.sprite.object.object-791 > span::before {
+  background-position: -368px -512px;
+}
+.sprite.object.object-792 > span::before {
+  background-position: 0px -528px;
+}
+.sprite.object.object-793 > span::before {
+  background-position: -16px -528px;
+}
+.sprite.object.object-794 > span::before {
+  background-position: -32px -528px;
+}
+.sprite.object.object-795 > span::before {
+  background-position: -48px -528px;
+}
+.sprite.object.object-796 > span::before {
+  background-position: -64px -528px;
+}
+.sprite.object.object-797 > span::before {
+  background-position: -80px -528px;
+}
+.sprite.object.object-798 > span::before {
+  background-position: -96px -528px;
+}
+.sprite.object.object-799 > span::before {
+  background-position: -112px -528px;
+}
+.sprite.object.object-800 > span::before {
+  background-position: -128px -528px;
+}
+.sprite.object.object-801 > span::before {
+  background-position: -144px -528px;
+}
+.sprite.object.object-802 > span::before {
+  background-position: -160px -528px;
+}
+.sprite.object.object-803 > span::before {
+  background-position: -176px -528px;
+}
+.sprite.object.object-804 > span::before {
+  background-position: -192px -528px;
+}
+.sprite.object.object-805 > span::before {
+  background-position: -208px -528px;
+}
+.sprite.object.object-806 > span::before {
+  background-position: -224px -528px;
+}
+.sprite.object.object-807 > span::before {
+  background-position: -240px -528px;
+}
+.sprite.object.object-808 > span::before {
+  background-position: -256px -528px;
+}
+.sprite.object.object-809 > span::before {
+  background-position: -272px -528px;
+}
+.sprite.object.object-810 > span::before {
+  background-position: -288px -528px;
+}
+.sprite.object.object-811 > span::before {
+  background-position: -304px -528px;
+}
+.sprite.object.object-812 > span::before {
+  background-position: -320px -528px;
+}
+.sprite.object.object-813 > span::before {
+  background-position: -336px -528px;
+}
+.sprite.object.object-814 > span::before {
+  background-position: -352px -528px;
+}
+.sprite.object.object-815 > span::before {
+  background-position: -368px -528px;
+}
+.sprite.npc.universal > span::before {
+  background-image: url(content/maps/towninterior.png);
+  background-position: 0 -288px;
+}
+.sprite.npc.robin > span::before {
+  background-image: url(content/characters/Robin.png);
+  background-position: 0 -4px;
+}
+.sprite.npc.demetrius > span::before {
+  background-image: url(content/characters/Demetrius.png);
+  background-position: 0 -1px;
+}
+.sprite.npc.maru > span::before {
+  background-image: url(content/characters/Maru.png);
+  background-position: 0 -6px;
+}
+.sprite.npc.sebastian > span::before {
+  background-image: url(content/characters/Sebastian.png);
+  background-position: 0 -4px;
+}
+.sprite.npc.linus > span::before {
+  background-image: url(content/characters/Linus.png);
+  background-position: 0 -7px;
+}
+.sprite.npc.pierre > span::before {
+  background-image: url(content/characters/Pierre.png);
+  background-position: 0 -3px;
+}
+.sprite.npc.caroline > span::before {
+  background-image: url(content/characters/Caroline.png);
+  background-position: 0 -7px;
+}
+.sprite.npc.abigail > span::before {
+  background-image: url(content/characters/Abigail.png);
+  background-position: 0 -5px;
+}
+.sprite.npc.alex > span::before {
+  background-image: url(content/characters/Alex.png);
+  background-position: 0 -3px;
+}
+.sprite.npc.george > span::before {
+  background-image: url(content/characters/George.png);
+  background-position: 0 -7px;
+}
+.sprite.npc.evelyn > span::before {
+  background-image: url(content/characters/Evelyn.png);
+  background-position: 0 -8px;
+}
+.sprite.npc.lewis > span::before {
+  background-image: url(content/characters/Lewis.png);
+  background-position: 0 -3px;
+}
+.sprite.npc.clint > span::before {
+  background-image: url(content/characters/Clint.png);
+  background-position: 0 -3px;
+}
+.sprite.npc.penny > span::before {
+  background-image: url(content/characters/Penny.png);
+  background-position: 0 -7px;
+}
+.sprite.npc.pam > span::before {
+  background-image: url(content/characters/Pam.png);
+  background-position: 0 -7px;
+}
+.sprite.npc.emily > span::before {
+  background-image: url(content/characters/Emily.png);
+  background-position: 0 -4px;
+}
+.sprite.npc.haley > span::before {
+  background-image: url(content/characters/Haley.png);
+  background-position: 0 -6px;
+}
+.sprite.npc.jas > span::before {
+  background-image: url(content/characters/Jas.png);
+  background-position: 0 -7px;
+}
+.sprite.npc.vincent > span::before {
+  background-image: url(content/characters/Vincent.png);
+  background-position: 0 -9px;
+}
+.sprite.npc.jodi > span::before {
+  background-image: url(content/characters/Jodi.png);
+  background-position: 0 -6px;
+}
+.sprite.npc.kent > span::before {
+  background-image: url(content/characters/Kent.png);
+  background-position: 0 -1px;
+}
+.sprite.npc.sam > span::before {
+  background-image: url(content/characters/Sam.png);
+  background-position: 0 0px;
+}
+.sprite.npc.leah > span::before {
+  background-image: url(content/characters/Leah.png);
+  background-position: 0 -6px;
+}
+.sprite.npc.shane > span::before {
+  background-image: url(content/characters/Shane.png);
+  background-position: 0 -4px;
+}
+.sprite.npc.marnie > span::before {
+  background-image: url(content/characters/Marnie.png);
+  background-position: 0 -6px;
+}
+.sprite.npc.elliott > span::before {
+  background-image: url(content/characters/Elliott.png);
+  background-position: 0 -3px;
+}
+.sprite.npc.gus > span::before {
+  background-image: url(content/characters/Gus.png);
+  background-position: 0 -2px;
+}
+.sprite.npc.dwarf > span::before {
+  background-image: url(content/characters/Dwarf.png);
+  background-position: 0 -4px;
+}
+.sprite.npc.wizard > span::before {
+  background-image: url(content/characters/Wizard.png);
+  background-position: 0 -1px;
+}
+.sprite.npc.harvey > span::before {
+  background-image: url(content/characters/Harvey.png);
+  background-position: 0 -1px;
+}
+.sprite.npc.sandy > span::before {
+  background-image: url(content/characters/Sandy.png);
+  background-position: 0 -3px;
+}
+.sprite.npc.willy > span::before {
+  background-image: url(content/characters/Willy.png);
+  background-position: 0 -2px;
+}
+.sprite.npc.krobus > span::before {
+  background-image: url(content/characters/Krobus.png);
+  background-position: 0 0px;
+}
+#npcGiftTastes {
+  border-collapse: collapse;
+}
+#npcGiftTastes th,
+#npcGiftTastes td {
+  text-align: left;
+  vertical-align: top;
+}
+#npcGiftTastes th + th,
+#npcGiftTastes td + td {
+  border-left: 1px solid #000;
+  width: 33.33333333%;
+}
+#npcGiftTastes tbody tr {
+  border-top: 1px solid #ddd;
+}
+#npcGiftTastes tbody tr.universal + tr {
+  border-top-color: black;
+}
+#npcGiftTastes tbody tr:nth-child(odd) {
+  background-color: #eee;
+}
+#npcGiftTastes ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#npcGiftTastes li {
+  float: left;
+  width: 180px;
+}
+#npcGiftTastes li > span {
+  height: 20px;
+  white-space: nowrap;
+}
+#npcGiftTastes li ul {
+  padding-left: 16px;
+}
+#npcGiftTastes li ul li {
+  -moz-transition: height .1s linear;
+  -ms-transition: height .1s linear;
+  -o-transition: height .1s linear;
+  -webkit-transition: height .1s linear;
+  transition: height .1s linear;
+  height: 0;
+  overflow: hidden;
+}
+#npcGiftTastes .clickable::before {
+  background-image: url(content/loosesprites/cursors.png);
+  background-position: -184px -345px;
+  margin: 4px 6px 4px 5px;
+  width: 7px;
+  height: 8px;
+}
+#npcGiftTastes .clickable.active::before {
+  background-position: -177px -345px;
+}
+#npcGiftTastes .clickable.active + ul li {
+  height: 18px;
+}
+#npcGiftTastes .objects:not(:first-of-type) label {
+  margin-top: 8px;
+}
+#npcGiftTastes .objects label {
+  display: block;
+  font-size: xx-small;
+}
+#npcGiftTastes .universal .neutral {
+  float: left;
+  margin-right: 8px;
+}
