@@ -2654,27 +2654,18 @@
 #npcGiftTastes li ul {
   padding-left: 16px;
 }
-#npcGiftTastes li ul li {
-  -moz-transition: height .1s linear;
-  -ms-transition: height .1s linear;
-  -o-transition: height .1s linear;
-  -webkit-transition: height .1s linear;
-  transition: height .1s linear;
-  height: 0;
-  overflow: hidden;
-}
 #npcGiftTastes .clickable::before {
   background-image: url(content/loosesprites/cursors.png);
-  background-position: -184px -345px;
+  background-position: -177px -345px;
   margin: 4px 6px 4px 5px;
   width: 7px;
   height: 8px;
 }
-#npcGiftTastes .clickable.active::before {
-  background-position: -177px -345px;
+#npcGiftTastes .clickable:not(.active)::before {
+  background-position: -184px -345px;
 }
-#npcGiftTastes .clickable.active + ul li {
-  height: 18px;
+#npcGiftTastes .clickable:not(.active) + ul {
+  display: none;
 }
 #npcGiftTastes .objects:not(:first-of-type) label {
   margin-top: 8px;

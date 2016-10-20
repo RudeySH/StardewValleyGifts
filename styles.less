@@ -220,35 +220,25 @@
 
         ul {
             padding-left: 16px;
-
-            li {
-                -moz-transition: height .1s linear;
-                -ms-transition: height .1s linear;
-                -o-transition: height .1s linear;
-                -webkit-transition: height .1s linear;
-                transition: height .1s linear;
-                height: 0;
-                overflow: hidden;
-            }
         }
     }
 
     .clickable {
         &::before {
             background-image: url(content/loosesprites/cursors.png);
-            background-position: -184px -345px;
+            background-position: -177px -345px;
             margin: 4px 6px 4px 5px;
             width: 7px;
             height: 8px;
         }
 
-        &.active {
+        &:not(.active) {
             &::before {
-                background-position: -177px -345px;
+                background-position: -184px -345px;
             }
 
-            + ul li {
-                height: 18px;
+            + ul {
+                display: none;
             }
         }
     }
