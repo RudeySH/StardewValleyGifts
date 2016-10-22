@@ -1,22 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
 .clickable {
     cursor: pointer;
     font-style: italic;
 }
 
-.sprite {
+.entity {
     white-space: nowrap;
-    image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
-    image-rendering: -moz-crisp-edges;          /* Firefox                        */
-    image-rendering: -o-crisp-edges;            /* Opera                          */
-    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
-    image-rendering: pixelated; /* Chrome */
-    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
-    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+    image-rendering: optimizeSpeed;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: pixelated;
+    image-rendering: optimize-contrast;
+    -ms-interpolation-mode: nearest-neighbor;
     
-    > span::before {
+    &::before {
         content: "";
         display: inline-block;
-        margin-right: 2px;
         text-align: center;
         transform: translateY(-2px);
         vertical-align: middle;
@@ -24,14 +27,18 @@
         height: 16px;
     }
 
+    span {
+        margin-left: 2px;
+    }
+
     &.object {
-        > span::before {
+        &::before {
             background-image: url(content/maps/springobjects.png);
         }
 
         .generate-objects();
         .generate-objects(@i: 0) when (@i < 24 * 34) {
-            &.object-@{i} > span::before {
+            &.object-@{i}::before {
                 background-position: mod(@i, 24) * -16px floor(@i / 24) * -16px;
             }
             .generate-objects(@i + 1);
@@ -39,139 +46,139 @@
     }
 
     &.npc {
-        &.universal > span::before {
+        &.universal::before {
             background-image: url(content/maps/towninterior.png);
             background-position: 0 -288px;
         }
-        &.robin > span::before {
+        &.robin::before {
             background-image: url(content/characters/Robin.png);
             background-position: 0 -4px;
         }
-        &.demetrius > span::before {
+        &.demetrius::before {
             background-image: url(content/characters/Demetrius.png);
             background-position: 0 -1px;
         }
-        &.maru > span::before {
+        &.maru::before {
             background-image: url(content/characters/Maru.png);
             background-position: 0 -6px;
         }
-        &.sebastian > span::before {
+        &.sebastian::before {
             background-image: url(content/characters/Sebastian.png);
             background-position: 0 -4px;
         }
-        &.linus > span::before {
+        &.linus::before {
             background-image: url(content/characters/Linus.png);
             background-position: 0 -7px;
         }
-        &.pierre > span::before {
+        &.pierre::before {
             background-image: url(content/characters/Pierre.png);
             background-position: 0 -3px;
         }
-        &.caroline > span::before {
+        &.caroline::before {
             background-image: url(content/characters/Caroline.png);
             background-position: 0 -7px;
         }
-        &.abigail > span::before {
+        &.abigail::before {
             background-image: url(content/characters/Abigail.png);
             background-position: 0 -5px;
         }
-        &.alex > span::before {
+        &.alex::before {
             background-image: url(content/characters/Alex.png);
             background-position: 0 -3px;
         }
-        &.george > span::before {
+        &.george::before {
             background-image: url(content/characters/George.png);
             background-position: 0 -7px;
         }
-        &.evelyn > span::before {
+        &.evelyn::before {
             background-image: url(content/characters/Evelyn.png);
             background-position: 0 -8px;
         }
-        &.lewis > span::before {
+        &.lewis::before {
             background-image: url(content/characters/Lewis.png);
             background-position: 0 -3px;
         }
-        &.clint > span::before {
+        &.clint::before {
             background-image: url(content/characters/Clint.png);
             background-position: 0 -3px;
         }
-        &.penny > span::before {
+        &.penny::before {
             background-image: url(content/characters/Penny.png);
             background-position: 0 -7px;
         }
-        &.pam > span::before {
+        &.pam::before {
             background-image: url(content/characters/Pam.png);
             background-position: 0 -7px;
         }
-        &.emily > span::before {
+        &.emily::before {
             background-image: url(content/characters/Emily.png);
             background-position: 0 -4px;
         }
-        &.haley > span::before {
+        &.haley::before {
             background-image: url(content/characters/Haley.png);
             background-position: 0 -6px;
         }
-        &.jas > span::before {
+        &.jas::before {
             background-image: url(content/characters/Jas.png);
             background-position: 0 -7px;
         }
-        &.vincent > span::before {
+        &.vincent::before {
             background-image: url(content/characters/Vincent.png);
             background-position: 0 -9px;
         }
-        &.jodi > span::before {
+        &.jodi::before {
             background-image: url(content/characters/Jodi.png);
             background-position: 0 -6px;
         }
-        &.kent > span::before {
+        &.kent::before {
             background-image: url(content/characters/Kent.png);
             background-position: 0 -1px;
         }
-        &.sam > span::before {
+        &.sam::before {
             background-image: url(content/characters/Sam.png);
             background-position: 0 -0px;
         }
-        &.leah > span::before {
+        &.leah::before {
             background-image: url(content/characters/Leah.png);
             background-position: 0 -6px;
         }
-        &.shane > span::before {
+        &.shane::before {
             background-image: url(content/characters/Shane.png);
             background-position: 0 -4px;
         }
-        &.marnie > span::before {
+        &.marnie::before {
             background-image: url(content/characters/Marnie.png);
             background-position: 0 -6px;
         }
-        &.elliott > span::before {
+        &.elliott::before {
             background-image: url(content/characters/Elliott.png);
             background-position: 0 -3px;
         }
-        &.gus > span::before {
+        &.gus::before {
             background-image: url(content/characters/Gus.png);
             background-position: 0 -2px;
         }
-        &.dwarf > span::before {
+        &.dwarf::before {
             background-image: url(content/characters/Dwarf.png);
             background-position: 0 -4px;
         }
-        &.wizard > span::before {
+        &.wizard::before {
             background-image: url(content/characters/Wizard.png);
             background-position: 0 -1px;
         }
-        &.harvey > span::before {
+        &.harvey::before {
             background-image: url(content/characters/Harvey.png);
             background-position: 0 -1px;
         }
-        &.sandy > span::before {
+        &.sandy::before {
             background-image: url(content/characters/Sandy.png);
             background-position: 0 -3px;
         }
-        &.willy > span::before {
+        &.willy::before {
             background-image: url(content/characters/Willy.png);
             background-position: 0 -2px;
         }
-        &.krobus > span::before {
+        &.krobus::before {
             background-image: url(content/characters/Krobus.png);
             background-position: 0 -0px;
         }
@@ -180,23 +187,38 @@
 
 #npcGiftTastes {
     border-collapse: collapse;
+    min-width: 583px;
+    table-layout: fixed;
+    width: 100%;
+
+    th {
+        border-bottom: 1px solid black;
+        white-space: nowrap;
+    }
 
     th, td {
         text-align: left;
         vertical-align: top;
+
+        &:first-child {
+            border-right: 1px solid black;
+        }
+
+        + th, + td {
+            border-left: 1px solid black;
+        }
     }
 
-    th + th, td + td {
-        border-left: 1px solid #000;
+    .love, .like, .neutral, .dislike, .hate {
         width: 100% / 3;
+    }
+
+    tr {
+        background-color: white;
     }
 
     tbody tr {
         border-top: 1px solid #ddd;
-        
-        &.universal + tr {
-            border-top-color: black;
-        }
 
         &:nth-child(odd) {
             background-color: #eee;
@@ -211,7 +233,7 @@
 
     li {
         float: left;
-        width: 180px;
+        width: 160px;
 
         > span {
             height: 20px;
@@ -227,7 +249,7 @@
         &::before {
             background-image: url(content/loosesprites/cursors.png);
             background-position: -177px -345px;
-            margin: 4px 6px 4px 5px;
+            margin: 4px 4px 4px 5px;
             width: 7px;
             height: 8px;
         }
@@ -257,5 +279,141 @@
     .universal .neutral {
         float: left;
         margin-right: 8px;
+    }
+}
+
+.table-icon {
+    th:first-child {
+        width: 18px;
+    }
+    
+    .table-wrapper & {
+        > thead, > tbody, > tfoot {
+            > tr {
+                > th, > td {
+                    &:first-child {
+                        background: red;
+                        background-color: inherit;
+
+                        > a, > span {
+                            background: inherit;
+                            background-color: inherit;
+
+                            > a, > span {
+                                background-color: inherit;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        th:first-child {
+            width: 18px;
+
+            > a, > span {
+                height: 18px;
+                width: inherit;
+            }
+        }
+
+        td:first-child {
+            height: 19px;
+        }
+    }
+}
+
+.table-responsive {
+    display: block;
+    width: 100%;
+    min-height: 0%;
+    overflow-x: auto;
+}
+
+/* freeze table header */
+.table-clone {
+    margin-bottom: 0; // overrides bootstrap
+    position: relative;
+
+    > tr {
+        background: white;
+        position: absolute;
+        z-index: 1;
+    }
+
+    thead {
+        position: absolute;
+        z-index: 2;
+    }
+
+    &.frozen {
+        > tr {
+            position: fixed;
+        }
+
+        thead {
+            position: fixed;
+        }
+
+        .scrolling & thead {
+            position: absolute;
+        }
+    }
+
+    &:not(.frozen) {
+        > tr {
+            width: 100% !important;
+        }
+
+        thead {
+            clip: auto !important;
+            top: auto !important;
+            -moz-transform: none !important;
+            -ms-transform: none !important;
+            -o-transform: none !important;
+            -webkit-transform: none !important;
+            transform: none !important;
+        }
+    }
+}
+
+/* freeze table column */
+.table-wrapper {
+    position: relative;
+}
+
+tr {
+    > th, > td {
+        &:first-child {
+            > a, > span {
+                .table-wrapper & {
+                    left: 0;
+                    position: absolute;
+                    text-align: inherit;
+                }
+            }
+        }
+    }
+}
+
+/* freeze table column header */
+.table-wrapper .table-clone {
+    + table th:first-child {
+        > a, > span {
+            left: auto;
+            position: absolute;
+            z-index: 2;
+        }
+    }
+
+    &.frozen + table th:first-child {
+        > a, > span {
+            position: fixed;
+            -moz-transform: none;
+            -ms-transform: none;
+            -o-transform: none;
+            -webkit-transform: none;
+            transform: none;
+        }
     }
 }
