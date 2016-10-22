@@ -213,6 +213,7 @@
                 entity = item.appendChild(document.createElement('A'));
                 entity.className = 'object object-' + objectId;
                 entity.href = 'http://stardewvalleywiki.com/' + name.replace(/ /g, '_');
+                entity.title = result[4];
                 span = entity.appendChild(document.createElement('SPAN'));
                 span.appendChild(document.createTextNode(name));
             }
