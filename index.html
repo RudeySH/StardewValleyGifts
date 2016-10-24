@@ -122,6 +122,7 @@
                     for (var o = 0; o < uni[prop].length; o++) {
                         var objectId = uni[prop][o];
                         if (objectId < 0) continue;
+                        if (npc.all.indexOf(objectId) !== -1) continue;
                         var categoryId = getCategoryId(objectId);
                         if (categoryId === undefined || categoryId === null) continue;
                         if (uni[prop].indexOf(categoryId) === -1) continue;
