@@ -107,7 +107,7 @@
                                 if (categoryId === null) continue;
                             }
                             
-                            if (npc === uni || categoryId === undefined || npc.all.indexOf(categoryId) === -1) {
+                            if (npc === uni || categoryId === undefined || !any(npc, ['love', 'like'], function (id) { return id === categoryId; })) {
                                 if (!any(uni, ['love', 'like'], function (id) {
                                     return id === objectId || id === categoryId && (npc === uni || uni.all.indexOf(objectId) === -1);
                                 })) continue;
