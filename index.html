@@ -2,16 +2,16 @@
 <html>
 
 <head>
-	<title>Stardew Valley Gifts</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" href="favicon.ico">
-	<link type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" rel="stylesheet">
-	<link type="text/css" href="styles.css" rel="stylesheet" title="Default Style">
-	<script type="text/javascript">content = { data: {} };</script>
-	<script type="text/javascript" src="content/data/npcGiftTastes.js"></script>
-	<script type="text/javascript" src="content/data/objectInformation.js"></script>
-	<script type="text/javascript" src="customtable.js"></script>
-	<script type="text/javascript" src="index.js"></script>
+    <title>Stardew Valley Gifts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico">
+    <link type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" rel="stylesheet">
+    <link type="text/css" href="styles.css" rel="stylesheet" title="Default Style">
+    <script type="text/javascript">content = { data: {} };</script>
+    <script type="text/javascript" src="content/data/npcGiftTastes.js"></script>
+    <script type="text/javascript" src="content/data/objectInformation.js"></script>
+    <script type="text/javascript" src="customtable.js"></script>
+    <script type="text/javascript" src="index.js"></script>
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -21,27 +21,27 @@
         ga('create', 'UA-86120746-1', 'auto');
         ga('send', 'pageview');
         
-	</script>
+    </script>
 </head>
 
 <body>
-	<!--<div class="table-wrapper">-->
-	<div class="table-responsive">
-		<table id="npcGiftTastes" class="table-icon">
-			<thead>
-				<tr>
-					<th class="npc"><span></span></th>
-					<th class="npc" style="width: 80px;">NPC</th>
-					<th class="love">Love</th>
-					<th class="like">Like</th>
-					<th class="neutral dislike hate">Neutral/Dislike/Hate</th>
-				</tr>
-			</thead>
-		</table>
-	</div>
-	<!--</div>-->
+    <!--<div class="table-wrapper">-->
+    <div class="table-responsive">
+        <table id="npcGiftTastes" class="table-icon">
+            <thead>
+                <tr>
+                    <th class="npc"><span></span></th>
+                    <th class="npc" style="width: 80px;">NPC</th>
+                    <th class="love">Love</th>
+                    <th class="like">Like</th>
+                    <th class="neutral dislike hate">Neutral/Dislike/Hate</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <!--</div>-->
 
-	<script type="text/javascript">
+    <script type="text/javascript">
         var categoryNames = {
             '-2': 'Gems',
             '-5': 'Eggs',
@@ -97,25 +97,28 @@
                     if (objectIds.length === 0) continue;
 
                     for (var o = 0; o < objectIds.length; o++) {
-                        var objectId = objectIds[o];
+                        var objId = objectIds[o];
+                        var catId = undefined;
+
+                        if (objId > 0) {
+                            catId = getCategoryId(objId);
+                            if (npc !== uni && uni[prop].indexOf(catId) !== -1 && uni.all.indexOf(objId) === -1 && npc.all.indexOf(catId) === -1) continue;
+                        }
 
                         // omit universally neutral/disliked/hated objects
                         if (prop !== 'love' && prop !== 'like') {
-                            var categoryId = undefined;
-                            if (objectId > 0) {
-                                categoryId = getCategoryId(objectId);
-                                if (categoryId === null) continue;
-                            }
-                            
-                            if (npc === uni || categoryId === undefined || !any(npc, ['love', 'like'], function (id) { return id === categoryId; })) {
+                            if (catId === null) continue;
+                            if (npc === uni || catId === undefined || !any(npc, ['love', 'like'], function (id) { return id === catId; })) {
                                 if (!any(uni, ['love', 'like'], function (id) {
-                                    return id === objectId || id === categoryId && (npc === uni || uni.all.indexOf(objectId) === -1);
+                                    return id === objId || id === catId && (npc === uni || uni.all.indexOf(objId) === -1);
                                 })) continue;
                             }
                         }
 
-                        appendObject(ul, npc, prop, objectId);
+                        appendObject(ul, npc, prop, objId);
                     }
+
+                    if (npc.name === 'Willy' && objectId === '198') debugger;
 
                     if (npc === uni) continue;
 

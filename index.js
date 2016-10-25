@@ -44,7 +44,7 @@ function getNPCs() {
 
             case 'Universal_Like':
                 uni.like = giftTastes.split(' ');
-                uni.like.push('-79.1');
+                uni.like.push('-79.1'); // TODO
                 uniquify(uni, 'like');
                 break;
 
@@ -68,11 +68,11 @@ function getNPCs() {
                 npcs.push(npc);
 
                 giftTastes = giftTastes.trim().split('/');
-                npc.neutral = giftTastes[9].split(' ');
-                npc.hate = giftTastes[7].split(' ');
-                npc.dislike = giftTastes[5].split(' ');
                 npc.love = giftTastes[1].split(' ');
                 npc.like = giftTastes[3].split(' ');
+                npc.dislike = giftTastes[5].split(' ');
+                npc.hate = giftTastes[7].split(' ');
+                npc.neutral = giftTastes[9].split(' ');
 
                 for (var id in categoryIdExceptions) {
                     var objId = id;
@@ -90,14 +90,14 @@ function getNPCs() {
                     npc.like.push(id);
                 }
 
-                npc.neutralDialog = giftTastes[8];
-                uniquify(npc, 'neutral');
+                npc.loveDialog = giftTastes[0];
+                uniquify(npc, 'love');
 
                 npc.hateDialog = giftTastes[6];
                 uniquify(npc, 'hate');
 
-                npc.loveDialog = giftTastes[0];
-                uniquify(npc, 'love');
+                npc.neutralDialog = giftTastes[8];
+                uniquify(npc, 'neutral');
 
                 npc.likeDialog = giftTastes[2];
                 uniquify(npc, 'like');
@@ -109,14 +109,15 @@ function getNPCs() {
     }
 
     function uniquify(npc, prop) {
-        var isUniversal = npc === uni;
-        npc[prop] = npc[prop].filter(function (objId, index) {
-            var catId;
-            if (objId > 0 && (isUniversal || prop !== 'like' || categoryIdExceptions[objId] === undefined)) catId = getCategoryId(objId);
-
-            return (isUniversal || (!catId || uni[prop].indexOf(catId) === -1) && uni[prop].indexOf(objId) === -1)
-                && npc[prop].indexOf(objId) === index && npc.all.indexOf(objId) === -1;
-        });
+        if (npc !== uni) {
+            npc[prop] = npc[prop].filter(function (objId, index) {
+                var catId = objId > 0 ? getCategoryId(objId) : undefined;
+                return uni[prop].indexOf(objId) === -1
+                    && npc[prop].indexOf(objId) === index
+                    && npc.all.indexOf(objId) === -1
+                    && (!catId || prop === 'love' || prop === 'hate' || npc.hate.indexOf(catId) === -1);
+            });
+        }
         npc.all.push.apply(npc.all, npc[prop]);
     }
 
