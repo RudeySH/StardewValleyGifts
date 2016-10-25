@@ -79,11 +79,10 @@
             td = tr.appendChild(document.createElement('TD'));
             var a = td.appendChild(document.createElement('A'));
             a.appendChild(document.createTextNode(npc.name));
-
-            if (npc !== uni) {
-                entity.href = 'http://stardewvalleywiki.com/' + npc.name;
-                a.href = 'http://stardewvalleywiki.com/' + npc.name;
-            }
+            
+            entity.href = a.href = npc === uni
+                ? 'http://stardewvalleywiki.com/Friendship#Universal_Gifts'
+                : 'http://stardewvalleywiki.com/' + npc.name;
             
             var columns = [['love'], ['like'], ['neutral', 'dislike', 'hate']];
             for (var c = 0; c < columns.length; c++) {
