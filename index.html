@@ -64,8 +64,11 @@
         };
 
         var tBody = document.createElement('TBODY');
+        
         var npcs = getNPCs();
-        var uni = npcs[0];
+        var uni = npcs.shift();
+        npcs.sort(function (a, b) { return a.name > b.name ? 1 : -1 });
+        npcs.unshift(uni);
         
         for (var n = 0; n < npcs.length; n++) {
             var npc = npcs[n];
