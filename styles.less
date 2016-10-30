@@ -2,9 +2,25 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: inherit;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &[href] {
+        color: inherit;
+
+        &:hover {
+            color: blue;
+        }
+    }
+}
+
 .clickable {
     cursor: pointer;
-    font-style: italic;
+    font-weight: bold;
 }
 
 .entity {
@@ -233,7 +249,7 @@
 
     li {
         float: left;
-        width: 160px;
+        width: 165px;
 
         > span {
             height: 20px;
@@ -241,22 +257,25 @@
         }
 
         ul {
-            padding-left: 16px;
+            border: 1px dotted black;
+            display: inline-block;
+            margin: -1px;
+            margin-bottom: -5px;
         }
     }
 
     .clickable {
         &::before {
             background-image: url(content/loosesprites/cursors.png);
-            background-position: -177px -345px;
-            margin: 4px 4px 4px 5px;
-            width: 7px;
-            height: 8px;
+            background-position: -420px -471px;
+            margin: 1px;
+            width: 14px;
+            height: 14px;
         }
 
         &:not(.active) {
             &::before {
-                background-position: -184px -345px;
+                background-position: -364px -493px;
             }
 
             + ul {

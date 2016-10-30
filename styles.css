@@ -1,9 +1,21 @@
 * {
   box-sizing: border-box;
 }
+a {
+  text-decoration: inherit;
+}
+a:hover {
+  text-decoration: underline;
+}
+a[href] {
+  color: inherit;
+}
+a[href]:hover {
+  color: blue;
+}
 .clickable {
   cursor: pointer;
-  font-style: italic;
+  font-weight: bold;
 }
 .entity {
   white-space: nowrap;
@@ -2662,24 +2674,27 @@
 }
 #npcGiftTastes li {
   float: left;
-  width: 160px;
+  width: 165px;
 }
 #npcGiftTastes li > span {
   height: 20px;
   white-space: nowrap;
 }
 #npcGiftTastes li ul {
-  padding-left: 16px;
+  border: 1px dotted black;
+  display: inline-block;
+  margin: -1px;
+  margin-bottom: -5px;
 }
 #npcGiftTastes .clickable::before {
   background-image: url(content/loosesprites/cursors.png);
-  background-position: -177px -345px;
-  margin: 4px 4px 4px 5px;
-  width: 7px;
-  height: 8px;
+  background-position: -420px -471px;
+  margin: 1px;
+  width: 14px;
+  height: 14px;
 }
 #npcGiftTastes .clickable:not(.active)::before {
-  background-position: -184px -345px;
+  background-position: -364px -493px;
 }
 #npcGiftTastes .clickable:not(.active) + ul {
   display: none;
