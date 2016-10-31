@@ -1,10 +1,15 @@
 * {
   box-sizing: border-box;
 }
+body {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: -1px;
+}
 a {
   text-decoration: inherit;
 }
 a:hover {
+  color: red;
   text-decoration: underline;
 }
 a[href] {
@@ -16,6 +21,7 @@ a[href]:hover {
 .clickable {
   cursor: pointer;
   font-weight: bold;
+  letter-spacing: initial;
 }
 .entity {
   white-space: nowrap;
@@ -2628,12 +2634,13 @@ a[href]:hover {
 }
 #npcGiftTastes {
   border-collapse: collapse;
-  min-width: 583px;
+  min-width: 553px;
   table-layout: fixed;
   width: 100%;
 }
 #npcGiftTastes th {
   border-bottom: 1px solid black;
+  letter-spacing: initial;
   white-space: nowrap;
 }
 #npcGiftTastes th,
@@ -2674,14 +2681,14 @@ a[href]:hover {
 }
 #npcGiftTastes li {
   float: left;
-  width: 165px;
+  width: 150px;
 }
 #npcGiftTastes li > span {
   height: 20px;
   white-space: nowrap;
 }
 #npcGiftTastes li ul {
-  border: 1px dotted black;
+  border: 1px dashed red;
   display: inline-block;
   margin: -1px;
   margin-bottom: -5px;

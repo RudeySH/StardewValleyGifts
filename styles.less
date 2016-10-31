@@ -2,10 +2,16 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: -1px;
+}
+
 a {
     text-decoration: inherit;
 
     &:hover {
+        color: red;
         text-decoration: underline;
     }
 
@@ -21,6 +27,7 @@ a {
 .clickable {
     cursor: pointer;
     font-weight: bold;
+    letter-spacing: initial;
 }
 
 .entity {
@@ -203,12 +210,13 @@ a {
 
 #npcGiftTastes {
     border-collapse: collapse;
-    min-width: 583px;
+    min-width: 553px;
     table-layout: fixed;
     width: 100%;
 
     th {
         border-bottom: 1px solid black;
+        letter-spacing: initial;
         white-space: nowrap;
     }
 
@@ -249,7 +257,7 @@ a {
 
     li {
         float: left;
-        width: 165px;
+        width: 150px;
 
         > span {
             height: 20px;
@@ -257,7 +265,7 @@ a {
         }
 
         ul {
-            border: 1px dotted black;
+            border: 1px dashed red;
             display: inline-block;
             margin: -1px;
             margin-bottom: -5px;
