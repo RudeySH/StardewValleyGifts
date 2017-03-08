@@ -73,6 +73,8 @@
         
         for (var n = 0; n < npcs.length; n++) {
             var npc = npcs[n];
+            if (location.search.toLowerCase().indexOf(npc.name.toLowerCase()) !== -1) continue;
+            
             var tr = tBody.appendChild(document.createElement('TR'));
             tr.className = npc.name.toLowerCase();
 
